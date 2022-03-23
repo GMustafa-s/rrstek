@@ -1765,4 +1765,32 @@ body{
 		font-size: 14px;
 		line-height: 24px;
 	}
+	.carousel {
+		position: relative;
+	}
+	.carousel .mask {
+		position: relative;
+		overflow: hidden;
+		width: 600px;
+		height: 300px;
+	}
+	.carousel .mask .slide {
+		height: 300px;
+	}
+	.carousel-inner {
+		position: relative;
+	}
+	.carousel-inner .mask {
+		position: relative;
+		overflow: hidden;
+		width: 600px;
+	}
+	.carousel-inner .mask .slideset {
+		width: 99999px;
+		float: left;
+	}
+	.carousel-inner .mask .slide {
+		width: 600px;
+		float: left;
+	}
 }
