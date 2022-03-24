@@ -6,6 +6,7 @@ jQuery(function(){
 	initFitVids();
 	initNavActive();
 	initCarousel();
+	initSliderActive();
 });
 
 /** Accordion **/
@@ -67,6 +68,14 @@ function initFitVids() {
 function initNavActive(){
 	jQuery('#nav .open').click(function(e) {
 		jQuery('body').toggleClass("nav-active");
+	});
+}
+
+/** Slider Active **/
+function initSliderActive(){
+	jQuery('.solution-area .btn-holder .show-all').click(function(e) {
+		e.preventDefault();
+		jQuery('.solution-area').toggleClass("slider-disabled");
 	});
 }
 
