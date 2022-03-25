@@ -7,30 +7,61 @@ jQuery(function(){
 	initNavActive();
 	initCarousel();
 	initSliderActive();
+	initAccordionActive();
+	initAccordionDisabled();
 });
 
-/** Accordion **/
-function initAccordion(){
-	jQuery('.opener').click(function(e) {
-		e.preventDefault();
-		var jQuerythis = jQuery(this);
-		if(jQuerythis.next().hasClass('active')) {
-			jQuerythis.next().removeClass('active');
-			jQuerythis.next().slideUp(350);
-		}else {
-			jQuerythis.parent().parent().find('li .drop').removeClass('active');
-			jQuerythis.parent().parent().find('li .drop').slideUp(350);
-			jQuerythis.next().toggleClass('active');
-			jQuerythis.next().slideToggle(350);
-		}
-	});
 
-	jQuery('.text-holder ol li').click(function(){
-		if(jQuery(this).hasClass('active')){
-			jQuery(this).removeClass('active');
+jQuery(window).on("load", function(){
+	if (jQuery('.accordion li').not("has-active")) {
+		jQuery('.accordion').addClass('disabled');
+	}
+});
+
+
+/** Slide Toggle **/
+function initAccordionDisabled(){
+	jQuery('.accordion .opener').click(function(e) {
+		if (jQuery('.accordion li').hasClass("has-active")) {
+			jQuery('.accordion').removeClass("disabled");
 		}
 		else{
-			jQuery(this).toggleClass('active');	
+			jQuery('.accordion').toggleClass('disabled');
+		}
+	});
+}
+
+/** Accordion **/
+function initAccordion() {
+		var data = jQuery(".accordion").attr("data-accordion");
+		jQuery(".opener").on("click", function(e){
+			e.preventDefault();
+			if (data === "close") {
+				jQuery(".drop").slideUp();
+					if (jQuery(this).hasClass("active")) {
+					jQuery(this).toggleClass("active");
+				}
+			else {
+				jQuery(".opener").removeClass("active");
+				jQuery(this).toggleClass("active");
+			}
+		}
+		else {
+			jQuery(this).toggleClass("active");
+		}
+		jQuery(this).next(".drop").not(":animated").slideToggle();
+
+	});  
+}
+
+/** Accordion Active **/
+function initAccordionActive(){
+	jQuery('.accordion .opener').click(function(e) {
+		if (jQuery('.accordion .opener').hasClass("active")) {
+			jQuery(this).parent().toggleClass('has-active').siblings().removeClass('has-active');
+		}
+		else{
+			jQuery(this).parent().toggleClass('has-active');
 		}
 	});
 }
