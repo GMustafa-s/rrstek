@@ -1499,6 +1499,30 @@ body{
 .contact-form .box input[type="submit"]:hover{
 	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #0F00E2 126.82%);
 }
+/** Animation stylings **/
+@media only screen and (min-width: 992px){
+	.viewport-holder{
+		opacity: 0;
+		visibility: hidden;
+		transition: all ease 1s;
+	}
+	.viewport-holder.viewport-active{
+		opacity: 1;
+		visibility: visible;
+	}
+	.viewport-holder.fadeIn{
+		transform: scale(0);
+	}
+	.fadeIn.viewport-active{
+		transform: scale(1);	
+	}
+	.viewport-holder.slideUp{
+		transform: translateY(150px);
+	}
+	.slideUp.viewport-active{
+		transform: none;
+	}
+}
 /** Carousel Stylings Reset on Large Screens **/
 @media only screen and (min-width: 767px){
 	.solution-area .carousel .mask{
@@ -1851,9 +1875,12 @@ body{
 	.brands-logo{
 		margin: 0;
 	}
+	.brand-holder:hover .brands-logo{
+		overflow-x: auto;
+	}
 	.brands-logo{
 		width: 590px;
-		overflow-x: auto;
+		overflow-x: hidden;
 	}.brands-logo ul{
 		width: 1050px;
 	}
