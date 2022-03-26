@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	min-width: 320px;
 }
 ol, ul {
 	list-style: none;
@@ -80,9 +81,6 @@ body{
 .header-t .logo img{
 	display: block;
 	width: 90px;
-}
-#nav{
-	padding: 60px 0 0;
 }
 #nav .open{
 	width: 38px;
@@ -1020,7 +1018,7 @@ body{
 	left: 0;
 	right: 0;
 	top: 9px;
-	z-index: 1;
+	z-index: 5;
 	background: transparent;
 }
 .promo{
@@ -1046,11 +1044,11 @@ body{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 150px;
+	top: 120px;
 	bottom: 60px;
 	z-index: 1;
 	display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .promo .holder{
 	width: 100%;
@@ -1070,6 +1068,121 @@ body{
 	font-size: 24px;
 	line-height: 36px;
 	color: #fff;
+}
+.promo .box{
+	padding: 0 0 59px 47px;
+	float: left;
+	width: 35%;
+}
+.promo .breadcrumbs{
+	margin: -42px 0 26px;
+}
+.promo .breadcrumbs li{
+	display: inline-block;
+	vertical-align: top;
+}
+.promo .breadcrumbs li + li:before{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/ico-right-solid.svg) no-repeat;
+	width: 6px;
+	height: 10px;
+	background-size: cover;
+	margin: 0 20px 0 14px;
+}
+.promo .breadcrumbs a{
+	text-decoration: none;
+	color: #f4f4f4;
+	font-size: 16px;
+	line-height: 28px;
+	transition: all ease 0.5s;
+}
+.promo .breadcrumbs a:hover{
+	opacity: 0.7;
+}
+.promo .text{
+	margin-bottom: 0;
+}
+.promo .text h1{
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 68px;
+	margin: 0;
+	padding: 33px 0 61px;
+	color: #fff;
+}
+.promo .text li{
+	display: inline-block;
+	vertical-align: middle;
+}
+.promo .text li + li{
+	margin: 0 0 0 17px;
+}
+.promo .text .btn{
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	padding: 11px 26px;
+	box-shadow: 0 10px 60px rgba(114, 71, 121, 0.1);
+	border-radius: 40px;
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	min-width: 107px;
+	text-align: center;
+	transition: all ease 0.5s;
+}
+.promo .text .btn span{
+	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #00EDED 126.82%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	display: inline-block;
+}
+.promo .text .btn.add{
+	background: transparent;
+	color: #fff;
+}
+.promo .text .btn:hover{
+	opacity: 0.7;
+}
+.promo .text .btn.add:hover{
+	background: #fff;
+	color: #013775;
+}
+.promo .align-right{
+	float: right;
+	width: 46.2%;
+	margin: 0 3.6% 0 0;
+}
+.promo .align-right .fluid-width-video-wrapper{
+	padding-top: 0 !important;
+}
+.promo .video-holder{
+	position: relative;
+	margin: -46px 0 0;
+}
+.promo .video-holder:after{
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 185px;
+	margin: -8px 0 0 -89px;
+	height: 112px;
+	content: '';
+	background: url(../images/studio-display-stand.png) no-repeat;
+	background-size: cover;
+}
+.promo .video-holder video{
+	height: 324px;
+	width: 589px;
+	border-radius: 5px;
+	padding: 11px 4px;
+	background: #000;
 }
 .post-area{
 	padding: 120px 0 128px;
@@ -1600,6 +1713,23 @@ body{
 		width: 42%;
 		right: 15px;
 	}
+	.promo .video-holder video{
+		width: 430px;
+		height: 242px;
+		padding: 9px;
+	}
+	.promo .video-holder {
+		margin: -27px 0 0;
+	}
+	.promo .align-right {
+		width: 41.8%;
+		margin: 0 1.6% 0 0;
+	}
+	.promo .video-holder::after{
+		width: 145px;
+		margin: -8px 0 0 -70px;
+		height: 88px;
+	}
 }
 @media only screen and (max-width: 1199px){
 	.header-b .text,
@@ -1633,6 +1763,52 @@ body{
 		background: #fff;
 		border-radius: 30px;
 		padding: 28px;
+	}
+	.promo{
+		padding: 162px 0 86px;
+		min-height: inherit;
+	}
+	.promo .frame{
+		display: inherit;
+		position: static;
+	}
+	.promo .box,
+	.promo .align-right{
+		float: none;
+	}
+	.promo:before{
+		z-index: -1;
+		bottom: 46%;
+	}
+	.promo .box{
+		min-height: 436px;
+		width: 50%;
+		margin-bottom: 80px;
+	}
+	.promo .breadcrumbs{
+		margin: 0 0 25px;
+	}
+	.promo .box{
+		width: 50%;
+		padding: 0 0 0 85px;
+	}
+	.promo .align-right{
+		width: 100%;
+		margin: 0;
+	}
+	.promo .video-holder{
+		margin: 0 auto;
+		width: 60%;
+	}
+	.promo .video-holder video{
+		width: 576px;
+		height: 325px;
+		padding: 10px 10px;
+	}
+	.promo .video-holder:after {
+		width: 176px;
+		margin: -7px 0 0 -92px;
+		height: 115px;
 	}
 }
 @media only screen and (max-width: 992px){
@@ -1932,6 +2108,17 @@ body{
 	}
 	.about-area .img-box{
 		max-width: 100%;
+	}
+	.promo .box{
+		width: 70%;
+		padding: 0 0 0 60px;
+	}
+	.promo .video-holder{
+		width: 91%;
+	}
+	.promo::before{
+		left: -12%;
+		background-position-x: -70px;
 	}
 }
 @media only screen and (max-width: 767px){
@@ -2321,9 +2508,6 @@ body{
 		font-size: 14px;
 		line-height: 24px;
 	}
-	#header.sticky{
-		position: static;
-	}
 	.promo .caption{
 		display: none;
 	}
@@ -2496,4 +2680,74 @@ body{
 		font-size: 12px;
 		line-height: 18px;
 	}
+	#header.sticky{
+		top: 1px;
+	}
+	.promo{
+		padding: 106px 0 60px;
+	}
+	.promo .box{
+		width: 100%;
+		padding: 0 0 0 9px;
+		min-height: inherit;
+		margin-bottom: 116px;
+	}
+	.promo .breadcrumbs{
+		margin: 0 0 21px;	
+	}
+	.promo .breadcrumbs a{
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.promo .text h1{
+		padding: 15px 0 28px;
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.promo .breadcrumbs li + li:before{
+		width: 4px;
+		height: 6px;
+		margin: 0 11px 0 7px;
+	}
+	.promo .text .btn{
+		padding: 8px 16px;
+		font-size: 12px;
+		line-height: 18px;
+		min-width: inherit;
+	}
+	.promo .text li + li{
+		margin: 0 0 0 6px;
+	}
+	.promo .video-holder{
+		width: 290px;
+	}
+	.promo .video-holder video{
+		width: 276px;
+		height: 158px;
+		padding: 5px 5px;
+	}
+	.promo .video-holder::after {
+		width: 99px;
+		margin: -7px 0 0 -47px;
+		height: 58px;
+	}
+	.promo::before {
+		left: 0;
+		background-position-x: -145px;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
