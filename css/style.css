@@ -764,6 +764,7 @@ body{
 /** Subscribe Area **/
 .subscribe-area{
 	margin: 0 0 151px;
+	overflow: hidden;
 }
 .subscribe-area .holder{
 	background: #75a4ff;
@@ -1501,11 +1502,41 @@ body{
 	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #0F00E2 126.82%);
 }
 /** Animation stylings **/
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1px){
 	.viewport-holder{
 		opacity: 0;
 		visibility: hidden;
-		transition: all ease 1s;
+		transition: opacity 0.9s cubic-bezier(0.26, 0.46, 0.45, 0.95) 0.2s, transform 0.9s cubic-bezier(0.26, 0.46, 0.45, 0.95);
+	}
+	.viewport-holder.delay-1{
+		transition-delay: 0.5s;
+	}
+	.viewport-holder.delay-2{
+		transition-delay: 0.8s;
+	}
+	.viewport-holder.delay-3{
+		transition-delay: 1s;
+	}
+	.viewport-holder.delay-4{
+		transition-delay: 1.2s;
+	}
+	.viewport-holder.delay-5{
+		transition-delay: 1.5s;
+	}
+	.viewport-holder.delay-6{
+		transition-delay: 1.8s;
+	}
+	.viewport-holder.delay-7{
+		transition-delay: 2s;
+	}
+	.viewport-holder.delay-8{
+		transition-delay: 2.2s;
+	}
+	.viewport-holder.delay-9{
+		transition-delay: 2.5s;
+	}
+	.about-area .accordion:after{
+		transition: opacity 0.9s cubic-bezier(0.26, 0.46, 0.45, 0.95) 1.5s, transform 0.9s cubic-bezier(0.26, 0.46, 0.45, 0.95);
 	}
 	.viewport-holder.viewport-active{
 		opacity: 1;
@@ -1517,10 +1548,10 @@ body{
 	.fadeIn.viewport-active{
 		transform: scale(1);	
 	}
-	.viewport-holder.slideUp{
-		transform: translateY(150px);
+	.viewport-holder.slideDown{
+		transform: translate3d(0px, -20px, 0px);
 	}
-	.slideUp.viewport-active{
+	.slideDown.viewport-active{
 		transform: none;
 	}
 }
