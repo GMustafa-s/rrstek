@@ -46,6 +46,9 @@ body{
 	font:18px/1.5 'Poppins', sans-serif;
 	color: #333;
 }
+p b{
+	font-weight: bolder;
+}
 #wrapper{
 	position: relative;
 	overflow: hidden;
@@ -63,6 +66,62 @@ body{
 	content: '';
 }
 /** Header Stylings **/
+.list {
+	margin-bottom: 50px;
+  }
+.list span {
+	color: #eee;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  
+.list > a {
+	text-decoration: none;
+	color: #eee;
+	font-size: 15px;
+  }
+  
+ .list a:hover {
+	text-decoration: underline;
+  }
+.div-retail {
+	color: #eee;
+	width: 500px;
+	margin-bottom: 40px;
+  }
+  
+.div-retail h2 {
+	font-size: 30px;
+	font-weight: 400;
+  }
+  
+  .div-retail p {
+	line-height: 2;
+	font-size: 15px;
+  }
+  
+  .btn-solution {
+	color: #eee;
+	background-color: transparent;
+	padding: 13px 24px ;
+	border: #eee 1px solid;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: .3s all;
+  }
+  .btn-solution:hover{
+	background: #eee;
+	color: #000;
+	border: #eee 1px solid;
+  }
+
+
+
+
+
+
+
+
 #header{
 	padding: 33px 0 0;
 	background: url(../images/bg-line.png) repeat-x;

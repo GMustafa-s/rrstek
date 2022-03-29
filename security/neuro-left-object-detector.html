@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>RRSTEK | Intelligent Video Analitycs</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -15,11 +15,11 @@
 				<div class="container">
 					<strong class="logo">
 						<a href="#">
-							<img src="images/logo.svg" alt="RRSTEK | Home Automation System">
+							<img src="/images/logo.svg" alt="RRSTEK | Home Automation System">
 						</a>
 					</strong>
 					<nav id="nav">
-						<a href="#" class="open"><img src="images/menu-icon.svg" alt="image description"></a>
+						<a href="#" class="open"><img src="/images/menu-icon.svg" alt="image description"></a>
 						<div class="drop-down">
 							<ul class="lang">
 								<li><a class="active" href="#">ENG</a></li>
@@ -99,11 +99,11 @@
 						<div class="box">
 							<ul class="breadcrumbs viewport-holder slideDown">
 								<li><a href="#">Main</a></li>
-								<li><a href="#">Business</a></li>
-								<li><a href="#">Title</a></li>
+								<li><a href="#">Health Care</a></li>
+								<li><a href="#">Neuro Left Object Detector</a></li>
 							</ul>
 							<div class="text">
-								<h1 class="viewport-holder slideDown delay-1">Worksplace Detector</h1>
+								<h1 class="viewport-holder slideDown delay-1">Neuro Left Object Detector</h1>
 								<ul class="viewport-holder slideDown delay-2">
 									<li><a href="#" class="btn"><span>Book a Demo</span></a></li>
 									<li><a href="#" class="btn add">How to Buy</a></li>
@@ -113,7 +113,7 @@
 						<div class="align-right">
 							<div class="video-holder  viewport-holder slideDown delay-2">
 								<video width="100%" height="320" loop="true" autoplay="autoplay" muted>
-									<source src="images/videos/video-01.mp4" type="video/mp4">
+									<source src="/images/videos/video-01.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 							</div>
@@ -127,22 +127,25 @@
 				<div class="container">
 					<div class="post">
 						<div class="viewport-holder slideDown">
-							<h1><span>OVERVIEW</span><br> Workspace Detector</h1>
+							<h1><span>OVERVIEW</span><br> Neuro Left Object Detector</h1>
 							<div class="text">
-								<p>Neural network intelligent module that works only on TRASSIR Neuro Station series video recorders. Supports Offload analytics.</p>
-								<p>TRASSIR Workplace Detector is designed to monitor and track employees' working time.</p>
+								<p>The module is designed to detect orphan and forgotten objects left in the field of view of the camera. The detector is used in areas where security is especially important, for example, at airports, train stations, in the "Safe City" on street cameras, etc.</p>
+								<p>Neuro Left Object Detector works on the basis of a detector of objects and people - unlike the classical one, it does not depend on the background and works better in difficult conditions. The detector is based on two grids and tracking. The first network detects people and several classes of objects: suitcase, backpack, box, bag, duffle and bag. The second uses frames of objects recognized by the first network to create their unique features. Tracking is the main part of the object detector. Works on the basis of the unique features of objects. Having carried out basic heuristics over the tracks, he determines the owner of the object (by the nature of movement and proximity to the object), whether he left the frame or moved away a certain distance.</p>
 							</div>
 						</div>
 						<div class="viewport-holder slideDown delay-1">
-							<h2>How it Works</h2>
+							<h2>Functionality</h2>
 							<div class="text">
 								<ul>
-									<li>The person in charge sets the necessary parameters for the module's work: the area of the working area, the schedule of employees, the permissible time of absence of an employee at the workplace.</li>
-									<li>A camera with a connected module is installed in an office or other work area.</li>
-									<li>The module generates a notification and sends a message to the person in charge if the employee is late, left earlier or has been absent from the workplace for more than the prescribed time.</li>
-									<li>The module daily generates reports on the actual time of stay and absence of an employee on site, sends reports by mail to the person in charge.</li>
+									<li>The quality of the network, which affects the accuracy and speed of work. The higher the quality, the better the detector works on complex scenes, but at the same time the higher the load on the server.</li>
+									<li>The number of frames per second collected for the detector to operate. The more frames, the lower the number of false positives, but the higher the load on the video card.</li>
+									<li>The minimum and maximum size of the object to be detected.</li>
+									<!-- <li>Recognition from complex angles.</li>
+									<li>No problems with the admission of cars on the territory.</li>
+									<li>Flexible configuration of the recognition module.</li>
+									<li>Delegation of computing on a server with a GPU from low-power DVRs.</li> -->
 								</ul>
-								<p>The functionality can be expanded by connecting additional scripts.</p>
+								<!-- <p>The new version of AutoRSSTEK 5 is compatible with the NeuroStation and QuattroStation series recorders. These servers use hardware graphics accelerators to achieve high efficiency when processing large video streams. Using the off-load technology, the module remotely processes video on any RSSTEK video recorders - connect them to NeuroStation servers over the network or through the cloud.</p> -->
 							</div>
 						</div>
 					</div>
@@ -151,37 +154,44 @@
 							<h2>Other Products</h2>
 							<ul class="accordion" data-accordion="close">
 								<li>
-									<a class="opener" href="#">ActivePOS</a>
+									<a class="opener" href="#">AutoRRSTEK</a>
+									<div class="drop">
+										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
+									</div>
+								</li>
+								<!-- <li>
+									<a class="opener" href="#">Neuro Left Object Detector</a>
+									<div class="drop">
+										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
+									</div>
+								</li> -->
+								<li>
+									<a class="opener" href="#">Pose Detector</a>
 									<div class="drop">
 										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
 									</div>
 								</li>
 								<li>
-									<a class="opener" href="#">Staff Tracker</a>
+									<a class="opener" href="#">Face Recognition</a>
+									<div class="drop">
+										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
+									</div>
+								</li>
+
+								<li>
+									<a class="opener" href="#">Neuro Detector</a>
 									<div class="drop">
 										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
 									</div>
 								</li>
 								<li>
-									<a class="opener" href="#">Shelf Detector</a>
+									<a class="opener" href="#">Direction Detector</a>
 									<div class="drop">
 										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
 									</div>
 								</li>
 								<li>
-									<a class="opener" href="#">Heat Map on Map</a>
-									<div class="drop">
-										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
-									</div>
-								</li>
-								<li>
-									<a class="opener" href="#">Neuro Counter</a>
-									<div class="drop">
-										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
-									</div>
-								</li>
-								<li>
-									<a class="opener" href="#">Queue Counter</a>
+									<a class="opener" href="#">Crowd Detector</a>
 									<div class="drop">
 										<p>Addresses unique challenges by using special rules and Phyton scripts</p>
 									</div>
@@ -202,7 +212,7 @@
 							<div class="slideset">
 								<div class="slide viewport-holder slideDown">
 									<div class="frame">
-										<img src="images/img-06.jpg" alt="image description">
+										<img src="/images/img-06.jpg" alt="image description">
 										<div class="txt-box">
 											<a href="#" class="more">Retail</a>
 										</div>
@@ -210,7 +220,7 @@
 								</div>
 								<div class="slide viewport-holder slideDown delay-1">
 									<div class="frame">
-										<img src="images/img-07.jpg" alt="image description">
+										<img src="/images/img-07.jpg" alt="image description">
 										<div class="txt-box">
 											<a href="#" class="more">Industrial</a>
 										</div>
@@ -218,7 +228,7 @@
 								</div>
 								<div class="slide viewport-holder slideDown delay-2">
 									<div class="frame">
-										<img src="images/img-08.jpg" alt="image description">
+										<img src="/images/img-08.jpg" alt="image description">
 										<div class="txt-box">
 											<a href="#" class="more">Public Safety</a>
 										</div>
@@ -226,7 +236,7 @@
 								</div>
 								<div class="slide viewport-holder slideDown">
 									<div class="frame">
-										<img src="images/img-09.jpg" alt="image description">
+										<img src="/images/img-09.jpg" alt="image description">
 										<div class="txt-box">
 											<a href="#" class="more">Health Care</a>
 										</div>
@@ -234,7 +244,7 @@
 								</div>
 								<div class="slide viewport-holder slideDown delay-1">
 									<div class="frame">
-										<img src="images/img-10.jpg" alt="image description">
+										<img src="/images/img-10.jpg" alt="image description">
 										<div class="txt-box">
 											<a href="#" class="more">Real Estate</a>
 										</div>
@@ -242,7 +252,7 @@
 								</div>
 								<div class="slide viewport-holder slideDown delay-2">
 									<div class="frame">
-										<img src="images/img-11.jpg" alt="image description">
+										<img src="/images/img-11.jpg" alt="image description">
 										<div class="txt-box">
 											<a href="#" class="more">Transport/Storage</a>
 										</div>
@@ -290,7 +300,7 @@
 						</div>
 						<div class="box viewport-holder slideDown delay-4">
 							<div class="captcha">
-								<img src="images/captcha.jpg" alt="captcha">
+								<img src="/images/captcha.jpg" alt="captcha">
 							</div>
 							<input type="submit" value="Send">
 						</div>
@@ -304,7 +314,7 @@
 					<div class="col">
 						<strong class="sub-logo">
 							<a href="#">
-								<img src="images/logo.svg" alt="image description">
+								<img src="/images/logo.svg" alt="image description">
 							</a>
 						</strong>
 					</div>
@@ -357,10 +367,10 @@
 				<div class="footer-b">
 					<div class="col">
 						<ul>
-							<li><a href="#"><img src="images/ico-instagram.svg" width="18" height="18" alt="image description"></a></li>
-							<li><a href="#"><img src="images/ico-xbox.svg" width="18" height="18" alt="image description"></a></li>
-							<li><a href="#"><img src="images/ico-twitter.svg" width="16" height="13" alt="image description"></a></li>
-							<li><a href="#"><img src="images/ico-youtube.svg" width="18" height="13" alt="image description"></a></li>
+							<li><a href="#"><img src="/images/ico-instagram.svg" width="18" height="18" alt="image description"></a></li>
+							<li><a href="#"><img src="/images/ico-xbox.svg" width="18" height="18" alt="image description"></a></li>
+							<li><a href="#"><img src="/images/ico-twitter.svg" width="16" height="13" alt="image description"></a></li>
+							<li><a href="#"><img src="/images/ico-youtube.svg" width="18" height="13" alt="image description"></a></li>
 						</ul>
 					</div>
 					<div class="col">
@@ -376,7 +386,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/jquery.main.js"></script>
+	<script src="/js/jquery-1.11.2.min.js"></script>
+	<script src="/js/jquery.main.js"></script>
 </body>
 </html>
