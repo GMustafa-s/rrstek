@@ -2496,6 +2496,9 @@ p b{
 	#nav .lang li{
 		padding: 5px;
 	}
+	#nav .list{
+		margin-bottom: 0;
+	}
 	#nav .drop-down{
 		position: fixed;
 		width: 100%;
