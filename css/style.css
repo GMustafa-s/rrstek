@@ -180,7 +180,7 @@ p b{
 	text-align: left;
 	border-bottom: 1px solid #ddd;
     padding-bottom: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 #nav .lang a{
 	text-decoration: none;
@@ -209,12 +209,13 @@ p b{
 	float: left;
 	width: 50%;
 	box-sizing: border-box;
+	margin-bottom: 18px;
 }
 #nav .list li{
 	float: left;
 	width: 100%;
 	box-sizing: border-box;
-	padding: 0 0 16px;
+	padding: 0 0 21px;
 }
 #nav .list:last-child li{
 	padding: 0 0 32px;
@@ -242,7 +243,7 @@ p b{
 	font-weight: 400;
 	font-size: 16px;
 	text-transform: uppercase;
-	margin-bottom: 5px;
+	margin-bottom: 12px;
 	display: block;
 	position: relative;
 	color: #333;
@@ -259,12 +260,16 @@ p b{
 	visibility: hidden;
 }
 #nav .list .link li{
-	padding: 5px 0;
+	padding: 9px 0;
 	border: 0;
+}
+#nav .list li:last-child{
+	padding-bottom: 0 !important;
 }
 #nav .list .link a{
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 18px;
+	text-transform: capitalize;
 	color: rgba(51, 51, 51, 0.6);
 }
 #nav .list .link a:hover{
@@ -1773,7 +1778,10 @@ p b{
 	}
 	.solution-area .show-all{
 		display: none;
-	}	
+	}
+	#nav .list li .nav-back{
+		display: none;
+	}
 }
 /** Responsive Stylings **/
 @media only screen and (max-width: 1350px){
@@ -2482,8 +2490,8 @@ p b{
 		margin: 12px 0 0 9px;
 	}
 	#nav .open.active{
-		top: 12px;
-		right: -15px;
+		top: 21px;
+		right: 3px;
 		padding: 0 30px 0 1px;
 	}
 	body.nav-active{
@@ -2492,6 +2500,9 @@ p b{
 	#nav .lang{
 		text-align: center;
 		margin-bottom: 5px;
+		padding-bottom: 9px;
+		padding-top: 13px;
+		padding-left: 32px;
 	}
 	#nav .lang li{
 		padding: 5px;
@@ -2538,28 +2549,43 @@ p b{
 	#nav .list:first-child > li + li,
 	#nav .list:last-child > li + li,
 	#nav .list:last-child li{
-		padding: 20px 0 7px;
+		padding: 0;
 	}
+	#nav .list li:last-child {
+		padding-bottom: 0 !important;
+	  }
 	#nav .list li{
 		float: none;
 		width: 100%;
 	}
-	#nav .list li.has-dropdown .title:after{
+	#nav .list li.has-dropdown .title:after,
+	#nav .list li a.nav-back:after{
 		transform: rotate(90deg);
-		top: 7px;
+		top: 50%;
 		right: 5px;
 		background: url(../images/ico-down-gradient.svg) no-repeat;
 		width: 8px;
 		height: 5px;
+		margin-top: -3px;
 		opacity: 1;
 		visibility: visible;
 	}
-	#nav .list li.has-dropdown.link-active .title.active:after{
+	#nav .list li a.nav-back:after{
 		right: auto;
 		left: 0;
+		margin-top: -2px;
 		transform: rotate(270deg);
 	}
-	#nav .list li.has-dropdown.link-active{
+	#nav .list li .nav-back{
+		padding-left: 15px !important;
+	}
+	#nav .list .link{
+		-webkit-transition: -webkit-transform .3s ease-in-out;
+		transition: -webkit-transform .3s ease-in-out;
+		-o-transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+		transform: translateX(120%);
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -2568,22 +2594,8 @@ p b{
 		z-index: 5;
 		background: #fff;
 	}
-	#nav .list li.has-dropdown.link-active .title{
-		padding-left: 15px;
-	}
-	#nav .list:first-child li.has-dropdown.link-active,
-	#nav .list:last-child li.has-dropdown.link-active{
-		border: 0;
-	}
-	#nav .list .link{
-		transition: all ease 0.2s;
-		height: 0;
-		overflow: hidden;
-		transform: translateX(100%);
-	}
-	#nav .list .title.active + .link{
-		height: auto;
-		transform: none;
+	#nav .list li.has-dropdown.link-active .link{
+		transform: translateX(0);;
 	}
 	#nav .list li{
 		border: 0;
@@ -2594,6 +2606,11 @@ p b{
 	#nav .list .link a{
 		font-size: 12px;
 		line-height: 18px;
+		display: block;
+		padding: 10px 5px;
+	}
+	#nav .list .title{
+		padding: 20px 7px 22px;
 	}
 	#nav .holder > .list > li,
 	#nav .holder > .list > li:nth-last-child(2),
@@ -2601,10 +2618,10 @@ p b{
 		min-height: auto;
 	}
 	#header{
-		padding: 42px 24px 0;
+		padding: 33px 24px 0;
 	}
 	.header-t .logo{
-		padding: 10px 15px 7px;
+		padding: 10px 15px 8px 14px;
 	}
 	body.nav-active .header-t .logo{
 		position: absolute;
@@ -2612,9 +2629,13 @@ p b{
 		top: 15px;
 		z-index: 3;
 		box-shadow: none;
+		padding: 23px 0 5px 22px;
 	}
 	.header-t .logo img{
 		width: 66px;
+	}
+	body.nav-active .header-t .logo{
+		width: 90px;
 	}
 	#nav .list ul{
 		margin: 0;
@@ -2629,11 +2650,27 @@ p b{
 	}
 	#nav .list .link{
 		margin-bottom: 4px;
+		margin-top: -10px;
 	}
+	#nav .list .link a{
+		position: relative;
+	}
+	#nav .list .link a:after{
+		position: absolute;
+		transform: rotate(90deg);
+		top: 19px;
+		right: 5px;
+		background: url(../images/ico-down-gradient.svg) no-repeat;
+		width: 8px;
+		height: 5px;
+		margin-top: -3px;
+		content: '';
+	  }
 	#nav .list .title{
 		font-size: 12px;
 		line-height: 18px;
-		margin-bottom: 8px;
+		margin-bottom: 0;
+		text-transform: capitalize;
 	}
 	#nav .drop-down .btn-holder{
 		display: block;
@@ -3029,6 +3066,9 @@ p b{
 }
 @media only screen and (max-width: 480px){
 	.brands-logo{
-		width: 230px;
+		width: 280px;
+	}
+	.slick-initialized .slick-slide{
+		width: 90px !important;
 	}
 }
