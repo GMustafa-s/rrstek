@@ -173,6 +173,32 @@ function initSlickCarousel() {
 			}
 		}]
 	});
+
+	jQuery('.slick-slider-add').slick({
+		slidesToScroll: 1,
+		rows: 0,
+		slidesToShow: 3,
+		prevArrow: '<button class="slick-prev">Previous</button>',
+		nextArrow: '<button class="slick-next">Next</button>',
+		dots: true,
+		dotsClass: 'slick-dots-add',
+		adaptiveHeight: true,
+		variableWidth: false,
+		autoplay: true,
+		responsive: [{
+			breakpoint: 993,
+			settings: {
+				slidesToScroll: 1,
+				slidesToShow: 2
+			},
+			breakpoint: 768,
+			settings: {
+				slidesToScroll: 1,
+				slidesToShow: 1
+			}
+		}]
+	});
+
 }
 
 /*
