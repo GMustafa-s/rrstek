@@ -168,6 +168,7 @@ function initSlickCarousel() {
 			settings: {
 				slidesToScroll: 1,
 				slidesToShow: 3,
+				autoplay: true,
 				variableWidth: true
 			}
 		}]

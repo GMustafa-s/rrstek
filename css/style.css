@@ -68,39 +68,34 @@ p b{
 /** Header Stylings **/
 .list {
 	margin-bottom: 50px;
-  }
+}
 .list span {
 	color: #eee;
 	margin-left: 10px;
 	margin-right: 10px;
-  }
-  
+}  
 .list > a {
 	text-decoration: none;
 	color: #eee;
 	font-size: 15px;
-  }
-  
- .list a:hover {
+}  
+.list a:hover {
 	text-decoration: underline;
-  }
+}
 .div-retail {
 	color: #eee;
 	width: 500px;
 	margin-bottom: 40px;
-  }
-  
+}  
 .div-retail h2 {
 	font-size: 30px;
 	font-weight: 400;
-  }
-  
-  .div-retail p {
+}  
+.div-retail p {
 	line-height: 2;
 	font-size: 15px;
-  }
-  
-  .btn-solution {
+}  
+.btn-solution {
 	color: #eee;
 	background-color: transparent;
 	padding: 13px 24px ;
@@ -108,23 +103,18 @@ p b{
 	border-radius: 30px;
 	cursor: pointer;
 	transition: .3s all;
-  }
-  .btn-solution:hover{
+}
+.btn-solution:hover{
 	background: #eee;
 	color: #000;
 	border: #eee 1px solid;
-  }
-
-
-
-
-
-
-
-
+}
 #header{
 	padding: 33px 0 0;
 	background: url(../images/bg-line.png) repeat-x;
+}
+#header.sticky .header-t{
+	margin: 0;
 }
 .header-t{
 	margin: 0 0 90px;
@@ -1218,6 +1208,18 @@ p b{
 	border-radius: 0 0 300px 0;
 	background-size: cover;
 }
+.promo.bg{
+	background: url(../images/security.jpg) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.promo.bg:before{
+	left: 0;
+	border-radius: 0;
+	background: linear-gradient(91.51deg, rgba(0, 0, 0, 0.9) 19.93%, rgba(0, 237, 237, 0.3) 74.42%, rgba(0, 237, 237, 0) 98.71%);
+	opacity: 0.6;
+	z-index: 0;
+}
 .promo img{
 	display: block;
 	width: 100%;
@@ -1232,6 +1234,9 @@ p b{
 	z-index: 1;
 	display: flex;
     align-items: center;
+}
+.promo.bg .frame{
+	top: 220px;
 }
 .promo .holder{
 	width: 100%;
@@ -2258,6 +2263,16 @@ p b{
 	}
 	.about-area .img-box .compatible{
 		min-height: 270px;
+		width: 425px;
+		margin: auto;
+	}
+	.about-area .img-box .customized,
+	.about-area .img-box .project,
+	.about-area .img-box .pre-sale,
+	.about-area .img-box .technical,
+	.about-area .img-box .advertising{
+		width: 425px;
+		margin: auto;
 	}
 	.about-area .img-box .compatible .img.bottom{
 		bottom: 0;
@@ -3261,37 +3276,44 @@ p b{
 	.slick-initialized .slick-slide{
 		width: 110px !important;
 	}
-	.about-area .img-box .compatible{
-		min-height: 300px;
-	}
-	.about-area .img-box .customized{
-		min-height: 360px;
-	}
-	.about-area .img-box .project,
-	.about-area .img-box .pre-sale,
-	.about-area .img-box .technical{
-		min-height: 420px;
-	}
-	.about-area .img-box .compatible .img.left,
-	.about-area .img-box .compatible .img.right,
-	.about-area .img-box .compatible .img.bottom{
-		width: inherit;
-		max-width: 120px;
-	}
 	.about-area .img-box .compatible .img.center{
 		max-width: 240px;
 	}
 	.about-area .img-box .project .img.left{
-		width: inherit;
 		max-width: 430px;
 	}
 	.about-area .img-box .project .img.center{
-		top: 127px;
-		width: inherit;
+		top: 98px;
 		max-width: 145px;
 	}
+	.about-area .img-box .compatible,
+	.about-area .img-box .customized,
+	.about-area .img-box .project,
+	.about-area .img-box .pre-sale,
+	.about-area .img-box .technical,
+	.about-area .img-box .advertising{
+		width: 360px;
+	}
+	.about-area .img-box .compatible{
+		min-height: 230px;
+	}
+	.about-area .img-box .customized{
+		min-height: 260px;
+	}
+	.about-area .img-box .project{
+		min-height: 350px;
+	}
+	.about-area .img-box .pre-sale{
+		min-height: 320px;
+	}
+	.about-area .img-box .technical{
+		min-height: 300px;
+	}
+	.about-area .img-box .advertising{
+		min-height: 300px;
+	}
 }
-@media only screen and (max-width: 599px){
+/* @media only screen and (max-width: 199px){
 	.about-area .img-box .compatible .img.left,
 	.about-area .img-box .compatible .img.right,
 	.about-area .img-box .compatible .img.bottom{
@@ -3342,7 +3364,7 @@ p b{
 	.about-area .img-box .technical{
 		min-height: 320px;
 	}
-}
+} */
 @media only screen and (max-width: 480px){
 	.brands-logo{
 		width: 280px;
@@ -3380,7 +3402,7 @@ p b{
 		max-width: 202px;
 	}
 	.about-area .img-box .project .img.center{
-		top: 56px;
+		top: 54px;
 		max-width: 75px;
 	}
 	.about-area .img-box .pre-sale{
@@ -3413,5 +3435,13 @@ p b{
 	}
 	.about-area .img-box .advertising .img.center{
 		max-width: 202px;
+	}
+	.about-area .img-box .compatible,
+	.about-area .img-box .customized,
+	.about-area .img-box .project,
+	.about-area .img-box .pre-sale,
+	.about-area .img-box .technical,
+	.about-area .img-box .advertising{
+		width: 200px;
 	}
 }
