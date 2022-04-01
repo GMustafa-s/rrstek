@@ -190,7 +190,8 @@ function initSlickCarousel() {
 			settings: {
 				slidesToScroll: 1,
 				slidesToShow: 2
-			},
+			}
+		},{
 			breakpoint: 768,
 			settings: {
 				slidesToScroll: 1,
