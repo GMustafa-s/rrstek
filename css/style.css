@@ -1208,17 +1208,25 @@ p b{
 	border-radius: 0 0 300px 0;
 	background-size: cover;
 }
-.promo.security,
-.promo.camera{
+#promo-security
+{
 	background: url(../images/banner-security.jpg) no-repeat;
 	background-size: cover;
 	z-index: 1;
 }
+
+#promo-business
+{
+	background: url(../images/Business/business-bg-banner.png) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+
 .promo.camera{
 	background: url(../images/banner-camera.jpg) no-repeat;
 	background-size: cover;
 }
-.promo.security:before,
+.promo.product:before,
 .promo.camera:before{
 	left: 0;
 	border-radius: 0;
@@ -1241,7 +1249,7 @@ p b{
 	display: flex;
     align-items: center;
 }
-.promo.security .frame,
+.promo.product .frame,
 .promo.camera .frame{
 	top: 220px;
 }
@@ -2084,6 +2092,7 @@ p b{
 	margin-left: 86px;
 }
 .article-holder .img-box{
+
 	float: left;
 	width: 45%;
 	margin-right: 86px;
@@ -2093,7 +2102,8 @@ p b{
 }
 .article-holder .img-box img{
 	display: block;
-	width: 100%;
+	padding: 8px;
+	width: 97%;
 	height: auto;
 }
 .article-holder .text-box{
@@ -2796,7 +2806,7 @@ p b{
 	.about-area .img-box .advertising .img.bottom{
 		width: 40%;
 	}
-	.promo.security .text h1,
+	.promo.product .text h1,
 	.promo.camera .text h1{
 		padding: 0 0 20px;
 	}
@@ -2934,7 +2944,7 @@ p b{
 	.our-work .slick-slider-add .txt h3{
 		font-size: 16px;
 	}
-	.promo.security:before,
+	.promo.product:before,
 	.promo.camera:before{
 		bottom: 0;
 	}
@@ -3239,7 +3249,7 @@ p b{
 		margin-bottom: 70px;
 		float: none;
 	}
-	.promo.security{
+	.promo.product{
 		background-position-x: 60%;
 	}
 }
@@ -4051,7 +4061,7 @@ p b{
 	.our-work .slick-slider-add .slick-slide{
 		margin-top: 40px;
 	}
-	.promo.security{
+	.promo.product{
 		background-position-x: 60%;
 	}
 	.promo .text{
