@@ -1219,6 +1219,7 @@ p b{
 {
 	background: url(../images/Business/business-bg-banner.png) no-repeat;
 	background-size: cover;
+	background-position: center;
 	z-index: 1;
 }
 
