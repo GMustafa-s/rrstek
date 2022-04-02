@@ -2141,7 +2141,7 @@ p b{
 		transform: translate3d(0px, -20px, 0px);
 	}
 	.slideDown.viewport-active{
-		transform: none;
+		transform: translate3d(0px, 0px, 0px);
 	}
 	/** Accordion **/
 	.about-area .img-box .frame .img{
