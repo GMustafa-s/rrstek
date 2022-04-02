@@ -213,11 +213,23 @@ function initSlickCarousel() {
 		variableWidth: false,
 		autoplay: true,
 		responsive: [{
-			breakpoint: 992,
+			breakpoint: 1199,
 			settings: {
 				slidesToScroll: 1,
-				slidesToShow: 2
-			}
+				slidesToShow: 3
+				}
+			},{
+				breakpoint: 991,
+				settings: {
+					slidesToScroll: 1,
+					slidesToShow: 2
+				}
+			},{
+				breakpoint: 767,
+				settings: {
+					slidesToScroll: 1,
+					slidesToShow: 2
+				}
 		}]
 	});
 
