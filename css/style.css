@@ -1208,12 +1208,18 @@ p b{
 	border-radius: 0 0 300px 0;
 	background-size: cover;
 }
-.promo.bg{
-	background: url(../images/security.jpg) no-repeat;
+.promo.security,
+.promo.camera{
+	background: url(../images/banner-security.jpg) no-repeat;
 	background-size: cover;
 	z-index: 1;
 }
-.promo.bg:before{
+.promo.camera{
+	background: url(../images/banner-camera.jpg) no-repeat;
+	background-size: cover;
+}
+.promo.security:before,
+.promo.camera:before{
 	left: 0;
 	border-radius: 0;
 	background: linear-gradient(91.51deg, rgba(0, 0, 0, 0.9) 19.93%, rgba(0, 237, 237, 0.3) 74.42%, rgba(0, 237, 237, 0) 98.71%);
@@ -1235,7 +1241,8 @@ p b{
 	display: flex;
     align-items: center;
 }
-.promo.bg .frame{
+.promo.security .frame,
+.promo.camera .frame{
 	top: 220px;
 }
 .promo .holder{
@@ -1261,6 +1268,9 @@ p b{
 	padding: 0 0 59px 47px;
 	float: left;
 	width: 35%;
+}
+.promo.camera .box{
+	width: 42%;
 }
 .promo .breadcrumbs{
 	margin: -42px 0 26px;
@@ -1900,6 +1910,46 @@ p b{
 .slick-arrow.slick-hidden{
 	display: none;
 }
+/** Slick Slider Compare **/
+.slick-slider-add,
+.slick-slider-compare{
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.slick-list:focus {
+	outline: none;
+}
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}  
+.slick-slider-add .slick-track,
+.slick-slider-add .slick-list,
+.slick-slider-compare .slick-track,
+.slick-slider-compare .slick-list{
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
 .our-work{
 	padding: 0 0 180px;
 }
@@ -2459,7 +2509,7 @@ p b{
 	.about-area .img-box .advertising .img.bottom{
 		width: 40%;
 	}
-	.promo.bg .text h1{
+	.promo.security .text h1{
 		padding: 0 0 20px;
 	}
 	.promo .text p{
@@ -2593,7 +2643,7 @@ p b{
 	.our-work .slick-slider-add .txt h3{
 		font-size: 16px;
 	}
-	.promo.bg:before{
+	.promo.security:before{
 		bottom: 0;
 	}
 }
@@ -2886,7 +2936,7 @@ p b{
 		margin-bottom: 70px;
 		float: none;
 	}
-	.promo.bg{
+	.promo.security{
 		background-position-x: 60%;
 	}
 }
@@ -3697,7 +3747,7 @@ p b{
 	.our-work .slick-slider-add .slick-slide{
 		margin-top: 40px;
 	}
-	.promo.bg{
+	.promo.security{
 		background-position-x: 60%;
 	}
 	.promo .text{
