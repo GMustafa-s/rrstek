@@ -10,6 +10,7 @@ jQuery(function(){
 	initAccordionActive();
 	initAccordionDisabled();
 	initSlickCarousel();
+	initLangActive();
 });
 jQuery(window).on('load', function() {
 	initInViewport();
@@ -200,6 +201,15 @@ function initSlickCarousel() {
 		}]
 	});
 
+}
+
+/* Language Nav */
+function initLangActive(){
+	var linkSelector = '#nav .lang a';	
+	jQuery(linkSelector).click(function(){
+		jQuery(this).addClass('active');
+		jQuery(linkSelector).not(this).removeClass('active');
+	});
 }
 
 /*

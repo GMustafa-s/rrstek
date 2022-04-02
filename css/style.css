@@ -2088,10 +2088,6 @@ p b{
 	font-size: 18px;
 	line-height: 27px;
 	color: #fff;
-	transition: all ease 0.5s;
-}
-.article-holder .text-box .more:hover{
-	opacity: 0.7;
 }
 /** Animation stylings **/
 @media only screen and (min-width: 1px){
@@ -2131,17 +2127,11 @@ p b{
 		opacity: 1;
 		visibility: visible;
 	}
-	.viewport-holder.fadeIn{
-		transform: scale(0);
-	}
-	.fadeIn.viewport-active{
-		transform: scale(1);	
-	}
 	.viewport-holder.slideDown{
 		transform: translate3d(0px, -20px, 0px);
 	}
 	.slideDown.viewport-active{
-		transform: none;
+		transform: translate3d(0px, 0px, 0px);
 	}
 	/** Accordion **/
 	.about-area .img-box .frame .img{
