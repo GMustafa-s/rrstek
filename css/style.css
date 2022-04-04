@@ -379,6 +379,9 @@ p b{
 	vertical-align: top;
 	width: 33%;
 }
+.link-holder.col2 li{
+	width: 48%;
+}
 .link-holder .links{
 	padding: 0;
 }
@@ -1009,7 +1012,6 @@ p b{
 	font-size: 18px;
 	line-height: 27px;
 	cursor: pointer;
-	transition: all ease 0.5s;
 }
 .subscribe-area .form input[type="submit"]:hover{
 	opacity: 0.7;
@@ -1093,7 +1095,6 @@ p b{
 	line-height: 27px;
 	color: #fff;
 	cursor: pointer;
-	transition: all ease 0.5s;
 }
 .booking-area input[type="submit"]:hover{
 	opacity: 0.7;
@@ -1233,7 +1234,7 @@ p b{
 	border-radius: 0;
 	background: linear-gradient(91.51deg, rgba(0, 0, 0, 0.9) 19.93%, rgba(0, 237, 237, 0.3) 74.42%, rgba(0, 237, 237, 0) 98.71%);
 	opacity: 0.6;
-	z-index: -1;
+	z-index: 0;
 }
 .promo img{
 	display: block;
@@ -1277,6 +1278,7 @@ p b{
 	padding: 0 0 59px 47px;
 	float: left;
 	width: 35%;
+	position: relative;
 }
 .promo.camera .box{
 	width: 42%;
@@ -1710,7 +1712,6 @@ p b{
 	border: 0;
 	outline: none;
 	cursor: pointer;
-	transition: all ease 0.5s;
 }
 .contact-form .box input[type="submit"]:hover{
 	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #0F00E2 126.82%);
@@ -2291,7 +2292,6 @@ p b{
 }
 .product-info .product-frame{
 	overflow-x: auto;
-	min-width: 800px;
 }
 .product-info .table{
 	width: 100%;
@@ -2463,13 +2463,16 @@ p b{
 		transition-delay: 1.8s;
 	}
 	.viewport-holder.delay-7{
-		transition-delay: 2s;
+		transition-delay: 2.1s;
 	}
 	.viewport-holder.delay-8{
-		transition-delay: 2.2s;
+		transition-delay: 2.4s;
 	}
 	.viewport-holder.delay-9{
-		transition-delay: 2.5s;
+		transition-delay: 2.8s;
+	}
+	.viewport-holder.delay-10{
+		transition-delay: 3.1s;
 	}
 	.viewport-holder.viewport-active{
 		opacity: 1;
@@ -2479,7 +2482,7 @@ p b{
 		transform: translate3d(0px, -20px, 0px);
 	}
 	.slideDown.viewport-active{
-		transform: translate3d(0px, 0px, 0px);
+		transform: none;
 	}
 	/** Accordion **/
 	.about-area .img-box .frame .img{
@@ -2960,6 +2963,9 @@ p b{
 	.compare-section .slick-slider-compare .txt{
 		text-align: center
 	}
+	.promo.product{
+		background-position: center !important;
+	}
 }
 @media only screen and (max-width: 992px){
 	.header-b .text,
@@ -3249,9 +3255,6 @@ p b{
 		width: 100%;
 		margin-bottom: 70px;
 		float: none;
-	}
-	.promo.product{
-		background-position-x: 60%;
 	}
 }
 @media only screen and (max-width: 767px){
