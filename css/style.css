@@ -1235,8 +1235,7 @@ p b{
 	background: linear-gradient(52deg, #00EDED, #020050);
 	border-radius: 0 0 300px 0;
 	background-size: cover;
-}
-#promo-security
+}#promo-security
 {
 	background: url(../images/banner-security.jpg) no-repeat;
 	background-size: cover;
@@ -1246,6 +1245,13 @@ p b{
 #promo-business
 {
 	background: url(../images/Business/business-bg-banner.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-health-care
+{
+	background: url(../images/Health-care/Health-background.png) no-repeat;
 	background-size: cover;
 	background-position: center;
 	z-index: 1;
