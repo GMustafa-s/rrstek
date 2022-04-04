@@ -157,7 +157,7 @@ p b{
 	position: absolute;
     top: 27px;
     right: 0;
-    width: 773px;
+    width: 556px;
     padding: 22px 33px;
     z-index: 1;
 	box-sizing: border-box;
@@ -170,7 +170,7 @@ p b{
 	text-align: left;
 	border-bottom: 1px solid #ddd;
     padding-bottom: 6px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 #nav .lang a{
 	text-decoration: none;
@@ -199,7 +199,7 @@ p b{
 	float: left;
 	width: 50%;
 	box-sizing: border-box;
-	margin-bottom: 18px;
+	margin-bottom: 0;
 }
 #nav .list li{
 	float: left;
@@ -215,13 +215,13 @@ p b{
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
 }
 #nav .list:first-child > li + li > a{
-	padding: 32px 0 0;
+	padding: 22px 0 0;
 }
 #nav .list:first-child > li:first-child > .title{
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 }
 #nav .list:last-child li:last-child > .title{
-	padding: 32px 0 0;
+	padding: 22px 0 0;
 }
 #nav .list:last-child{
 	padding-left: 40px;
@@ -254,10 +254,13 @@ p b{
 	visibility: hidden;
 }
 #nav .list .link{
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 #nav .list .link li{
 	border: 0;
+}
+#nav .list li:last-child .link{
+	padding: 0;
 }
 #nav .list li:last-child{
 	padding-bottom: 0 !important;
@@ -2282,11 +2285,12 @@ p b{
 }
 .compare-section .slick-slider-compare .img img{
 	display: block;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 .compare-section .slick-slider-compare .txt{
 	overflow: hidden;
+	padding: 0 10px 0 0;
 }
 .compare-section .slick-slider-compare h3{
 	font-weight: 400;
@@ -2369,8 +2373,12 @@ p b{
 	box-sizing: border-box;
 	border-radius: 30px;
 	text-align: center;
-	padding: 10px;
+	padding: 20px 10px 10px;
 	margin: 0 25px 50px;
+	min-width: 234px;
+}
+.product-info .table thead .box.dash{
+	border-style: dashed;
 }
 .product-info .table thead img{
 	display: block;
@@ -2381,6 +2389,9 @@ p b{
 	display: block;
 	font-size: 18px;
 	line-height: 32px;
+}
+.product-info .table thead .box.dash .model{
+	color: rgba(51, 51, 51, 0.6);
 }
 .product-info .table tbody tr{
 	height: 80px;
@@ -3235,6 +3246,13 @@ p b{
 	.promo .box{
 		width: 70%;
 		padding: 0;
+		margin-bottom: 0;
+	}
+	.promo.camera{
+		background-position: center;
+	}
+	.promo.camera .box{
+		width: 80%;
 	}
 	.promo .video-holder{
 		width: 91%;
@@ -3940,7 +3958,7 @@ p b{
 		width: 100%;
 		padding: 0 0 0 9px;
 		min-height: inherit;
-		margin-bottom: 116px;
+		margin-bottom: 0;
 	}
 	.promo .breadcrumbs{
 		margin: 0 0 21px;	
@@ -4191,6 +4209,9 @@ p b{
 	.product-info .table .holder .more{
 		padding: 5px;
 		font-size: 10px;
+	}
+	.product-info .table .holder{
+		display: none;
 	}
 }
 @media only screen and (max-width: 480px){
