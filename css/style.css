@@ -679,15 +679,32 @@ p b{
 	position: relative;
 	z-index: 1;
 }
+.feature-area .heading-area p{
+	
+		margin: 0;
+		font-size: 18px;
+		line-height: 68px;
+		text-align: center;
+	
+}
 .feature-area .product{
 	margin: -325px -92px -289px;
-	z-index: 1;
+	z-index: 0;
 	position: relative;
 }
 .feature-area .product img{
 	display: block;
-	margin: 0 auto;
-	max-width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    padding: 400px 0px;
+	
+}
+.feature-area .product .image-2{
+	position: absolute;
+	bottom: 40px;
+	left: 135px;
+	z-index: 1;
 }
 .feature-area .product .holder{
 	position: absolute;
