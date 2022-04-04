@@ -205,10 +205,6 @@ p b{
 	float: left;
 	width: 100%;
 	box-sizing: border-box;
-	padding: 0 0 21px;
-}
-#nav .list:last-child li{
-	padding: 0 0 32px;
 }
 #nav .list:first-child{
 	padding-right: 40px;
@@ -217,7 +213,15 @@ p b{
 #nav .list:first-child > li + li,
 #nav .list:last-child > li + li{
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
-	padding: 32px 0;
+}
+#nav .list:first-child > li + li > a{
+	padding: 32px 0 0;
+}
+#nav .list:first-child > li:first-child > .title{
+	padding-bottom: 15px;
+}
+#nav .list:last-child li:last-child > .title{
+	padding: 32px 0 0;
 }
 #nav .list:last-child{
 	padding-left: 40px;
@@ -249,8 +253,10 @@ p b{
 	opacity: 0;
 	visibility: hidden;
 }
+#nav .list .link{
+	padding-bottom: 20px;
+}
 #nav .list .link li{
-	padding: 9px 0;
 	border: 0;
 }
 #nav .list li:last-child{
@@ -261,6 +267,9 @@ p b{
 	font-size: 18px;
 	text-transform: capitalize;
 	color: rgba(51, 51, 51, 0.6);
+	padding: 6px 0;
+	display: inline-block;
+	vertical-align: top;
 }
 #nav .list .link a:hover{
 	color: #000;
@@ -678,20 +687,21 @@ p b{
 	right: 0;
 }
 /** Feature Area Stylings **/
+.feature-area{
+	padding: 100px 0 200px;
+}
 .feature-area .heading-area{
 	position: relative;
 	z-index: 1;
 }
 .feature-area .heading-area p{
-	
-		margin: 0;
-		font-size: 18px;
-		line-height: 68px;
-		text-align: center;
-	
+	margin: 0;
+	font-size: 18px;
+	line-height: 68px;
+	text-align: center;
 }
 .feature-area .product{
-	margin: -325px -92px -289px;
+	margin: 0;
 	z-index: 0;
 	position: relative;
 }
@@ -699,9 +709,6 @@ p b{
 	display: block;
     margin: 0 auto;
     max-width: 100%;
-    position: relative;
-    padding: 400px 0px;
-	
 }
 .feature-area .product .image-2{
 	position: absolute;
@@ -2583,22 +2590,8 @@ p b{
 	.about-area .text-holder li.active{
 		margin-bottom: 42px;
 	}
-	.flex-holder{
-		display: flex;
-		flex-direction: column;
-	}
-	.flex-holder .business-area{
-		order: 1;
-	}
-	.flex-holder .feature-area{
-		order: 2;
-		margin: -115px 0 0;
-	}
 	.feature-area .heading-area{
 		padding: 155px 0 50px;
-	}
-	.feature-area .product{
-		margin: -340px -109px -345px;
 	}
 	.business-area .holder{
 		padding: 15px 55px 0;
@@ -2845,12 +2838,6 @@ p b{
 	}
 	.header-b .text-area{
 		padding-left: 43px;
-	}
-	.feature-area{
-		display: none;
-	}
-	.feature-area .product{
-		margin-top: -280px;
 	}
 	.post-area .product-box{
 		width: 29%;
@@ -3273,6 +3260,13 @@ p b{
 		margin-bottom: 70px;
 		float: none;
 	}
+	.feature-area{
+		padding: 0 0 30px;
+	}
+	.feature-area .heading-area p{
+		font-size: 16px;
+		line-height: 28px;
+	}
 }
 @media only screen and (max-width: 767px){
 	.container{
@@ -3533,6 +3527,8 @@ p b{
 		display: block;
 		padding: 10px 5px;
 	}
+	#nav .list:first-child > li + li > a,
+	#nav .list:last-child li:last-child > .title,
 	#nav .list .title{
 		padding: 20px 7px 22px;
 	}
@@ -3689,9 +3685,6 @@ p b{
 	}
 	.about-area .text-holder .drop .border{
 		margin-bottom: 12px;
-	}
-	.feature-area .product{
-		margin: -120px -50px;
 	}
 	.business-area .holder{
 		padding: 0;
