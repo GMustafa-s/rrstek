@@ -2483,7 +2483,7 @@ p b{
 }
 /** Integration Page Stylings **/
 .text-frame{
-	padding: 16px 0 50px;
+	padding: 16px 0 100px;
 	text-align: center;
 	font-weight: 400;
 	font-size: 18px;
@@ -2513,6 +2513,10 @@ p b{
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
+.text-frame p{
+	max-width: 79%;
+	margin: 0 auto;
+}
 .items-holder .heading{
 	margin-bottom: 60px;
 }
@@ -2536,12 +2540,70 @@ p b{
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
+.items-holder .holder{
+	padding-bottom: 120px;
+}
 .items-holder .frame{
 	overflow: hidden;
+}
+.items-holder .box{
+	overflow: hidden;
+	padding: 30px;
+	background: #fff;
+	border-radius: 33px;
+	display: flex;
+	flex-direction: row;
 }
 .items-holder .item{
 	float: left;
 	width: 48%;
+	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #00EDED 126.82%);
+	background-clip: padding-box;
+	border-radius: 35px;
+	padding: 1px;
+	margin-bottom: 32px;
+}
+.items-holder .item:nth-child(even){
+	margin-left: 32px;
+}
+.items-holder .frame .img{
+	float: left;
+	width: 50%;
+}
+.items-holder .frame .txt{
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(51, 51, 51, 0.6);
+	align-self: center;
+}
+.items-holder .item h3{
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: normal;
+	margin-bottom: 8px;
+	color: #333;
+}
+.items-holder .frame p{
+	margin-bottom: 10px;
+}
+.items-holder .frame .details{
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 28px;
+	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #00EDED 126.82%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+.items-holder .frame .details:after{
+	background: url(../images/ico-right-gradient.svg) no-repeat;
+	width: 6px;
+	height: 10px;
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 10px;
 }
 /** Animation stylings **/
 @media only screen and (min-width: 1px){
@@ -2903,7 +2965,8 @@ p b{
 		width: 40%;
 	}
 	.promo.product .text h1,
-	.promo.camera .text h1{
+	.promo.camera .text h1,
+	.promo.integ .text h1{
 		padding: 0 0 20px;
 	}
 	.promo .text p{
@@ -3035,7 +3098,8 @@ p b{
 		font-size: 16px;
 	}
 	.promo.product:before,
-	.promo.camera:before{
+	.promo.camera:before,
+	.promo.integ:before{
 		bottom: 0;
 	}
 	.compare-section .slick-slider-compare .img{
@@ -3051,6 +3115,13 @@ p b{
 	}
 	.promo.product{
 		background-position: center !important;
+	}
+	.link-holder.col2 li{
+		width: 45%;
+		margin: 0 20px 0 0;
+	}
+	.text-frame{
+		padding: 65px 0 100px;
 	}
 }
 @media only screen and (max-width: 992px){
@@ -3145,6 +3216,9 @@ p b{
 	.link-holder .links{
 		max-width: 83%;
 		margin: 0 auto;	
+	}
+	.link-holder.col2 .links{
+		max-width: 100%;
 	}
 	.brand-holder{
 		padding: 19px 0 0;
@@ -3355,6 +3429,19 @@ p b{
 	.feature-area .heading-area p{
 		font-size: 16px;
 		line-height: 28px;
+	}
+	.text-frame p{
+		max-width: 100%;
+	}
+	.items-holder .frame{
+		overflow: inherit;
+	}
+	.items-holder .item{
+		float: none;
+		width: 100%;
+	}
+	.items-holder .item:nth-child(even){
+		margin-left: 0;
 	}
 }
 @media only screen and (max-width: 767px){
@@ -4019,6 +4106,7 @@ p b{
 		padding: 106px 0 60px;
 	}
 	.promo .box,
+	.promo.integ .box,
 	.promo.camera .box{
 		width: 100%;
 		padding: 0 0 0 9px;
@@ -4277,6 +4365,53 @@ p b{
 	}
 	.product-info .table .holder{
 		display: none;
+	}
+	.items-holder .holder{
+		padding-bottom: 50px;
+	}
+	.text-frame{
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.text-frame h2,
+	.items-holder .heading h2{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.text-frame h2 span,
+	.items-holder .heading h2 span{
+		font-size: 12px;
+		line-height: 24px;
+	}
+	.items-holder .item h3{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.items-holder .frame .txt{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.items-holder .frame .img img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.items-holder .frame .txt{
+		width: 50%;
+	}
+	.items-holder .box{
+		align-items: center;
+		border-radius: 15px;
+	}
+	.items-holder .item{
+		border-radius: 15px;
+		margin-bottom: 16px;
+	}
+	.items-holder .frame .details{
+		display: none;
+	}
+	.items-holder .heading{
+		margin-bottom: 20px;
 	}
 }
 @media only screen and (max-width: 480px){
