@@ -1461,13 +1461,6 @@ p b{
 	background-size: cover;
 	z-index: -1;
 }
-.promo .video-holder video{
-	height: 324px;
-	width: 589px;
-	border-radius: 5px;
-	padding: 11px 4px;
-	background: #000;
-}
 #promo-camera #image-holder img {
 	height: 50%;
 	width: 50%;
@@ -1475,6 +1468,14 @@ p b{
 	padding: 11px 4px;
 	margin: 0 auto;
 }
+.promo .video-holder video{
+	height: 324px;
+	width: 589px;
+	border-radius: 5px;
+	padding: 11px 4px;
+	background: #000;
+}
+
 
 .post-area{
 	padding: 120px 0 128px;
@@ -2710,6 +2711,7 @@ p b{
 	}
 }
 @media only screen and (min-width: 767px){
+
 	/** Carousel Stylings Reset on Large Screens **/
 	.solution-area .carousel .mask{
 		height: auto !important;
@@ -3063,6 +3065,19 @@ p b{
 		bottom: -40%;
 		
 	}
+	/* #promo-camera #image-holder:after{
+		display: flex;
+		align-items: center;
+		top: -120px;
+		width: 570px;
+		height: 570px;
+		border-radius: 100%;
+		
+	} */
+	#promo-camera #image-holder img {
+
+		width: 30%;
+	}
 	.main-camera{
 		padding-top: 300px;
 	}
@@ -3147,12 +3162,7 @@ p b{
 	.promo.integ:before{
 		bottom: 0;
 	}
-	.camera-page-btns{
-		position: absolute;
-		top: 0%;
-		right: 0px;
-		float: right	;
-	}
+	
 	.compare-section .slick-slider-compare .img{
 		float: none;
 		width: 100%;
