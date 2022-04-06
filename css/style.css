@@ -1236,6 +1236,14 @@ p b{
 	border-radius: 0 0 300px 0;
 	background-size: cover;
 }
+
+#promo-camera::before{
+	position: absolute;
+	left: -0%;
+	border-radius: 0;
+	
+
+}
 #promo-security{
 	background: url(../images/banner-security.jpg) no-repeat;
 	background-size: cover;
@@ -1423,6 +1431,10 @@ p b{
 	position: relative;
 	margin: -46px 0 0;
 }
+#promo-camera #image-holder{
+	position: relative;
+	margin: -46px 0 0;
+}
 .promo .video-holder:after{
 	position: absolute;
 	left: 50%;
@@ -1434,6 +1446,21 @@ p b{
 	background: url(../images/studio-display-stand.png) no-repeat;
 	background-size: cover;
 }
+
+
+#promo-camera #image-holder:after{
+	position: absolute;
+	left: 15%;
+	top: -120px;
+	width: 570px;
+	margin: -8px 0 0 -89px;
+	height: 570px;
+	border-radius: 100%;
+	content: '';
+	background: #fff;
+	background-size: cover;
+	z-index: -1;
+}
 .promo .video-holder video{
 	height: 324px;
 	width: 589px;
@@ -1441,6 +1468,14 @@ p b{
 	padding: 11px 4px;
 	background: #000;
 }
+#promo-camera #image-holder img {
+	height: 50%;
+	width: 50%;
+	border-radius: 5px;
+	padding: 11px 4px;
+	margin: 0 auto;
+}
+
 .post-area{
 	padding: 120px 0 128px;
 }
@@ -2888,7 +2923,8 @@ p b{
 	}
 	.promo .align-right {
 		width: 41.8%;
-		margin: 0 1.6% 0 0;
+		margin: 0 1.6% 0 0 !important;
+		padding-top: 60px;
 	}
 	.promo .video-holder:after{
 		width: 145px;
@@ -3022,6 +3058,15 @@ p b{
 		z-index: -1;
 		bottom: 46%;
 	}
+
+	#promo-camera:before{
+		bottom: -40%;
+		
+	}
+	.main-camera{
+		padding-top: 300px;
+	}
+	
 	.promo .box{
 		min-height: 436px;
 		width: 50%;
@@ -4415,6 +4460,9 @@ p b{
 	}
 }
 @media only screen and (max-width: 480px){
+	.main-camera{
+		padding-top: 150px;
+	}
 	.brands-logo{
 		width: 280px;
 	}
