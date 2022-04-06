@@ -369,6 +369,76 @@ p b{
 	position: relative;
 	margin: 0 0 -8px;
 }
+.visual.home{
+	min-height: 560px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 0;
+}
+.visual.home .align-left{
+	float: left;
+	width: 43%;
+}
+.visual.home .align-right{
+	float: right;
+	width: 57%;
+}
+.visual.home .max-container{
+	max-width: 490px;
+}
+.visual.home .align-left .max-container{
+	float: right;
+}
+.visual.home .align-right .max-container{
+	float: left;
+}
+.visual.home .video{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -3;
+}
+.visual.home .video video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 638px;
+    width: 864px;
+    object-fit: cover;
+}
+.visual.home .bg-border{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 1;
+}
+.visual.home .mask{
+    position: absolute;
+    height: 638px;
+    width: 864px;
+    top: 0;
+    right: 0;
+}
+.visual.home .head-cam{
+    position: absolute;
+    top: 400px;
+    right: 520px;
+    height: 130px;
+    width: 130px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: -3px 14px 44px rgb(114 71 121 / 10%);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #8c86d4;
+    z-index: 2;
+}
+.visual.home .head-cam img{
+	width: auto;
+	max-width: 100%;
+	margin: auto;
+}
 .visual video{
 	width: 100%;
 }
@@ -379,6 +449,24 @@ p b{
 	display: block;
 	width: 100%;
 	height: auto;
+}
+.visual.home .text-area{
+	padding-top: 180px;
+	position: relative;
+	z-index: 1;
+}
+.visual.home .text-area h1{
+	font-size: 48px;
+    font-weight: 400;
+    line-height: 68px;
+    margin: 0 0 16px;
+}
+.visual.home .text-area .text{
+	padding-bottom: 15px;
+}
+.visual.home .text-area p{
+	color: rgba(51, 51, 51, 0.6);
+	margin-bottom: 40px;
 }
 /** Links Holder Stylings **/
 .link-holder{
@@ -440,6 +528,16 @@ p b{
 	display: inline-block;
 	vertical-align: middle;
 	width: 19% !important;
+}
+.brand-holder.add .brands-logo{
+	background: linear-gradient(to right, #556cec, #50bbf1);
+	padding: 60px 0 90px;
+}
+.brand-holder.add .brands-logo li{
+	background: #fff;
+	border-radius: 15px;
+	width: 208px !important;
+	margin: 0 20px;	
 }
 /** About Area **/
 .about-area{
@@ -560,10 +658,6 @@ p b{
 .about-area .text-holder .opener.active + .drop{
 	color: #fff;
 }
-.about-area .text-holder .opener.active + .drop .img-box{
-	transform: none;
-	z-index: 1;
-}
 .about-area .img-box{
 	z-index: 0;
 	position: absolute;
@@ -599,95 +693,7 @@ p b{
 	height: 434px;
 	background: url(../images/customize-phyton.png) no-repeat;
 	background-size: cover;
-	transition: all ease 2s;
-}
-.about-area .img-box .img{
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.about-area .img-box .frame{
-	position: relative;
-}
-.about-area .img-box .compatible{
-	min-height: 360px;
-}
-.about-area .img-box .customized{
-	min-height: 430px;
-}
-.about-area .img-box .project{
-	min-height: 583px;
-}
-.about-area .img-box .pre-sale{
-	min-height: 426px;
-}
-.about-area .img-box .technical{
-	min-height: 501px;
-}
-.about-area .img-box .advertising{
-	min-height: 522px;
-}
-.about-area .project .center,
-.about-area .customized .center,
-.about-area .compatible .center{
-	left: 50%;
-	transform: translateX(-50%);
-}
-.about-area .compatible .right{
-	left: auto;
-	right: 0;
-}
-.about-area .customized .right{
-	left: auto;
-	right: 70px;
-}
-.about-area .customized .bottom,
-.about-area .compatible .bottom{
-	top: auto;
-	right: auto;
-	left: 50%;
-	bottom: 0;
-	margin-left: -8px;
-	transform: translateX(-50%);
-}
-.about-area .customized .bottom{
-	transform: none;
-	right: 0;
-	left: auto;
-}
-.about-area .img-box .project .center{
-	top: 140px;
-	left: 47%;
-}
-.about-area .img-box .pre-sale .right{
-	left: auto;
-	right: 0;
-	top: auto;
-	bottom: 0;
-}
-.about-area .img-box .pre-sale .bottom{
-	top: auto;
-	bottom: 0;
-}
-.about-area .img-box .technical .bottom{
-	top: auto;
-	bottom: 0;
-	left: auto;
-	right: 0;
-}
-.about-area .img-box .technical .right{
-	left: auto;
-	right: 0;
-}
-.about-area .img-box .advertising .bottom{
-	right: 0;
-	left: auto;
-	top: auto;
-	bottom: 0;
-}
-.about-area .img-box .advertising .top{
-	left: auto;
-	right: 0;
+	transition: all ease 1s;
 }
 /** Feature Area Stylings **/
 .feature-area{
@@ -2895,75 +2901,6 @@ p b{
 		margin: -8px 0 0 -70px;
 		height: 88px;
 	}
-	.about-area .img-box .compatible{
-		min-height: 400px;
-	}
-	.about-area .img-box .compatible .img{
-		width: 50%;
-	}
-	.about-area .img-box .compatible .img.left,
-	.about-area .img-box .compatible .img.right,
-	.about-area .img-box .compatible .img.bottom{
-		width: 25%;
-	}
-	.about-area .img-box .compatible .img.bottom{
-		bottom: 20px;
-		margin-left: -5px;
-	}
-	.about-area .img-box .customized{
-		min-height: 300px;
-	}
-	.about-area .img-box .customized .img.left,
-	.about-area .img-box .customized .img.right,
-	.about-area .img-box .customized .img.bottom{
-		width: 45%;
-	}
-	.about-area .img-box .customized .img.bottom{
-		right: 60px;
-	}
-	.about-area .img-box .project{
-		min-height: 350px;
-	}
-	.about-area .img-box .project .img.left{
-		width: 100%;
-	}
-	.about-area .img-box .project .img.center{
-		width: 40%;
-		top: 105px;
-		left: 50.5%;
-	}
-	.about-area .img-box .pre-sale{
-		min-height: 350px;
-	}
-	.about-area .img-box .pre-sale .img.center{
-		width: 100%;
-	}
-	.about-area .img-box .pre-sale .img.right{
-		width: 60%;
-	}
-	.about-area .img-box .pre-sale .img.bottom{
-		width: 20%;
-		bottom: 50px;
-	}
-	.about-area .img-box .technical{
-		min-height: 350px;
-	}
-	.about-area .img-box .technical .img.right{
-		width: 20%;
-	}
-	.about-area .img-box .technical .img.bottom{
-		width: 40%;
-	}
-	.about-area .img-box .advertising{
-		min-height: 350px;
-	}
-	.about-area .img-box .advertising .img.top{
-		width: 20%;
-		right: 25px;
-	}
-	.about-area .img-box .advertising .img.bottom{
-		width: 40%;
-	}
 	.promo.product .text h1,
 	.promo.camera .text h1,
 	.promo.integ .text h1{
@@ -3052,31 +2989,6 @@ p b{
 		margin: -7px 0 0 -92px;
 		height: 115px;
 	}
-	.about-area .img-box .compatible{
-		min-height: 270px;
-		width: 425px;
-		margin: auto;
-	}
-	.about-area .img-box .customized,
-	.about-area .img-box .project,
-	.about-area .img-box .pre-sale,
-	.about-area .img-box .technical,
-	.about-area .img-box .advertising{
-		width: 425px;
-		margin: auto;
-	}
-	.about-area .img-box .compatible .img.bottom{
-		bottom: 0;
-	}
-	.about-area .img-box .project .img.left{
-		width: 90%;
-		margin: 0 auto;
-		right: 0;
-	}
-	.about-area .img-box .project .img.center{
-		top: 113px;
-		width: 30%;
-	}
 	.article-holder .article{
 		margin-bottom: 100px;
 	}
@@ -3122,6 +3034,36 @@ p b{
 	}
 	.text-frame{
 		padding: 65px 0 100px;
+	}
+	.visual.home .align-left{
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+	.visual.home .head-cam{
+		right: 280px;
+	}
+	.visual.home .bg-border{
+		right: -280px;
+	}
+	.visual.home .mask{
+		right: -250px;
+	}
+	.visual.home .video{
+		right: -253px;
+	}
+	.brand-holder.add{
+		max-width: 100%;
+	}
+	.brand-holder.add .brands-logo{
+		padding: 70px 0;
+	}
+	.brand-holder.add .brands-logo li{
+		max-width: 108px;
+		margin: 0 10px;
+	}
+	.about-area .img-box .img{
+		position: static;
 	}
 }
 @media only screen and (max-width: 992px){
@@ -3442,6 +3384,29 @@ p b{
 	}
 	.items-holder .item:nth-child(even){
 		margin-left: 0;
+	}
+	.brand-holder.add .brands-logo li{
+		max-width: 150px;
+		margin: 0 9px;
+	}
+	.visual.home .text-area h1{
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.visual.home .video{
+		right: -383px;
+	}
+	.visual.home .mask{
+		right: -370px;
+	}
+	.visual.home .bg-border{
+		right: -390px;
+	}
+	.visual.home .head-cam{
+		right: 160px;
+	}
+	.btn-holder .btn{
+		margin-bottom: 15px;
 	}
 }
 @media only screen and (max-width: 767px){
@@ -4413,8 +4378,56 @@ p b{
 	.items-holder .heading{
 		margin-bottom: 20px;
 	}
+	.visual.home{
+		flex-direction: column;
+	}
+	.visual.home .align-left,
+	.visual.home .align-right{
+		float: none;
+		width: 100%;
+	}
+	.visual.home .align-right{
+		order: 1;
+	}
+	.visual.home .align-left{
+		order: 2;
+	}
+	.visual.home .video{
+		position: static;
+	}
+	.visual.home .mask,
+	.visual.home .bg-border,
+	.visual.home .head-cam{
+		display: none;
+	}
+	.visual.home .video video{
+		position: static;
+		width: 100%;
+		height: 450px;
+	}
+	.visual.home .text-area{
+		padding-top: 20px;
+	}
+	.visual.home .text-area h1{
+		font-size: 24px;
+		line-height: 34px;
+		margin: 0;
+	}
+	.visual.home .text-area p,
+	.btn-holder .btn{
+		font-size: 14px;
+	}
+	.btn-holder .btn{
+		padding: 10px 16px;
+	}
+	.brand-holder.add .brands-logo li{
+		max-width: 220px;
+	}
 }
 @media only screen and (max-width: 480px){
+	.brand-holder.add .brands-logo li{
+		max-width: 110px;
+	}
 	.brands-logo{
 		width: 280px;
 	}
