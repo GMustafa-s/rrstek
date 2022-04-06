@@ -3147,6 +3147,12 @@ p b{
 	.promo.integ:before{
 		bottom: 0;
 	}
+	.camera-page-btns{
+		position: absolute;
+		top: 0%;
+		right: 0px;
+		float: right	;
+	}
 	.compare-section .slick-slider-compare .img{
 		float: none;
 		width: 100%;
