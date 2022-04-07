@@ -1267,6 +1267,49 @@ p b{
 	background-position: center;
 	z-index: 1;
 }
+#promo-retail{
+	background: url(../images/Industries/Retail/RetailImage_background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-real-estate{
+	background: url(../images/Industries/Real-estate/Real-estate-backgroundImg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-industrial{
+	background: url(../images/Industries/Industrial/IndustrialBackground.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-solutions{
+	background: url(../images/Solutions/SolutionsBackground.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-healthcare{
+	background: url(../images/Industries/Healthcare/HealthcareBackground.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-publicSafety{
+	background: url(../images/Industries/Public-safety/PublicSafety-background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-transport{
+	background: url(../images/Industries/transport-and-storage/transport_and_storage_background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
 .promo.camera{
 	background: url(../images/banner-camera.jpg) no-repeat;
 	background-size: cover;
