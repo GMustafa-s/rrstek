@@ -1456,8 +1456,7 @@ p b{
 
 #promo-camera #image-holder:after{
 	position: absolute;
-	left: 15%;
-	top: -120px;
+
 	width: 570px;
 	margin: -8px 0 0 -89px;
 	height: 570px;
@@ -2716,6 +2715,7 @@ p b{
 		margin-top: 0;
 	}
 }
+
 @media only screen and (min-width: 767px){
 
 	/** Carousel Stylings Reset on Large Screens **/
@@ -3002,15 +3002,10 @@ p b{
 		bottom: -40%;
 		
 	}
-	/* #promo-camera #image-holder:after{
-		display: flex;
-		align-items: center;
-		top: -120px;
-		width: 570px;
-		height: 570px;
-		border-radius: 100%;
+	#promo-camera #image-holder:after{
+		margin: 0 auto;
 		
-	} */
+	}
 	#promo-camera #image-holder img {
 
 		width: 30%;
@@ -4486,13 +4481,8 @@ p b{
 	}
 }
 @media only screen and (max-width: 480px){
-<<<<<<< HEAD
-	.brand-holder.add .brands-logo li{
-		max-width: 110px;
-=======
 	.main-camera{
 		padding-top: 150px;
->>>>>>> d2552cc9cddd6ceb929814e12700b8e8be4c395f
 	}
 	.brands-logo{
 		width: 280px;
