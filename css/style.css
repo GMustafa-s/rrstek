@@ -416,7 +416,7 @@ p b{
 .visual.home .mask{
     position: absolute;
     height: 638px;
-    width: 864px;
+    width: 866px;
     top: 0;
     right: 0;
 }
@@ -3091,24 +3091,23 @@ p b{
 	.text-frame{
 		padding: 65px 0 100px;
 	}
+	.visual.home{
+		display: inherit;
+		overflow: hidden;
+	}
 	.visual.home .align-left{
 		padding-left: 15px;
 		padding-right: 15px;
 		box-sizing: border-box;
+		margin-top: 350px;
+		margin-left: 45px;
+		width: 92%;
 	}
-	.visual.home .head-cam{
-		right: 280px;
+	.visual.home .text-area .text{
+		max-width: 50%;
 	}
-	.visual.home .bg-border{
-		right: -280px;
-	}
-	.visual.home .mask{
-		right: -250px;
-	}
-	.visual.home .video{
-		right: -253px;
-	}
-	.brand-holder.add{
+	.brand-holder.add,
+	.visual.home .max-container{
 		max-width: 100%;
 	}
 	.brand-holder.add .brands-logo{
@@ -3445,21 +3444,20 @@ p b{
 		max-width: 150px;
 		margin: 0 9px;
 	}
-	.visual.home .text-area h1{
-		font-size: 30px;
-		line-height: 50px;
+	.visual.home .text-area{
+		margin-top: 160px;
 	}
 	.visual.home .video{
-		right: -383px;
+		right: -150px;
 	}
 	.visual.home .mask{
-		right: -370px;
+		right: -150px;
 	}
 	.visual.home .bg-border{
-		right: -390px;
+		right: -160px;
 	}
 	.visual.home .head-cam{
-		right: 160px;
+		right: 380px;
 	}
 	.btn-holder .btn{
 		margin-bottom: 15px;
@@ -4434,53 +4432,39 @@ p b{
 	.items-holder .heading{
 		margin-bottom: 20px;
 	}
-	.visual.home{
-		flex-direction: column;
-	}
-	.visual.home .align-left,
-	.visual.home .align-right{
-		float: none;
-		width: 100%;
-	}
-	.visual.home .align-right{
-		order: 1;
-	}
-	.visual.home .align-left{
-		order: 2;
-	}
-	.visual.home .video{
-		position: static;
-	}
-	.visual.home .mask,
-	.visual.home .bg-border,
-	.visual.home .head-cam{
-		display: none;
-	}
-	.visual.home .video video{
-		position: static;
-		width: 100%;
-		height: 450px;
-	}
-	.visual.home .text-area{
-		padding-top: 20px;
-	}
 	.visual.home .text-area h1{
-		font-size: 24px;
-		line-height: 34px;
+		font-size: 32px;
+		line-height: 44px;
 		margin: 0;
 	}
 	.visual.home .text-area p,
 	.btn-holder .btn{
-		font-size: 14px;
+		font-size: 12px;
+		line-height: 18px;
 	}
 	.btn-holder .btn{
-		padding: 10px 16px;
+		padding: 8px 16px;
 	}
 	.brand-holder.add .brands-logo li{
 		max-width: 220px;
 	}
+	.visual.home .max-container{
+		max-width: 100%;
+	}
+	.visual.home .bg-border{
+		margin: 0 0 0 -250px;
+	}
+	.visual.home .head-cam{
+		width: 64px;
+		height: 64px;
+		right: 264px;
+		top: 500px;
+	}
 }
 @media only screen and (max-width: 480px){
+	.brand-holder.add .brands-logo li{
+		max-width: 110px;
+	}
 	.main-camera{
 		padding-top: 150px;
 	}
@@ -4562,4 +4546,38 @@ p b{
 	.about-area .img-box .advertising{
 		width: 200px;
 	}
+	.visual.home .text-area .text{
+		max-width: 70%;
+	}
+	.visual.home .bg-border {
+		margin: 0 0 0 -410px;
+	}
+	.visual.home .head-cam{
+		right: 245px;
+		top: 570px;
+	}
+	.visual.home .align-left{
+		margin-left: 0;
+		width: 100%;
+	}
+	/* .visual.home .mask{
+		height: 348px;
+    	width: 637px;
+	}
+	.visual.home .video video{
+		height: 468px;
+    	width: 624px;
+	}
+	.visual.home .bg-border {
+		margin: 0 0 0 -180px;
+		max-height: 468px;
+	}
+	.visual.home .text-area{
+		padding-top: 100px;
+		margin-top: 0;
+	}
+	.visual.home .head-cam {
+		right: 159px;
+		top: 310px;
+	} */
 }
