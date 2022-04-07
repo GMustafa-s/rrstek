@@ -2776,6 +2776,34 @@ p b{
 	}
 }
 
+@media only screen and (min-width: 800px){
+	#text-banner-overview{
+		font-size: smaller;
+		width: 528px;
+	}
+	
+	#text-banner-overview p{
+		padding-top: 0px;
+		margin-bottom: 0;
+	}
+	.promo .text .btn{
+		margin-top: 50px;
+	}
+
+	#promo-healthcare #text-banner-overview{
+		width: 828px;
+	}
+	#promo-industrial #text-banner-overview{
+		width: 828px;
+	}
+	#promo-healthcare{
+		min-height: 100vh;
+	}
+	#promo-industrial{
+		min-height: 100vh;
+	}
+}
+
 @media only screen and (min-width: 767px){
 
 	/** Carousel Stylings Reset on Large Screens **/
@@ -3013,6 +3041,7 @@ p b{
 	}
 }
 @media only screen and (max-width: 1199px){
+
 	.header-b .text,
 	.header-b .desc{
 		padding: 0;
