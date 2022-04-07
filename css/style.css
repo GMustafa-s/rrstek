@@ -1275,6 +1275,9 @@ p b{
 	background: url(../images/banner-integrated.jpg) no-repeat;
 	background-size: cover;
 }
+.promo.camera-detail{
+	background: linear-gradient(116.47deg, #020050 -5.53%, #00EDED 126.82%);
+}
 .promo.product:before,
 .promo.camera:before,
 .promo.integ:before{
@@ -1283,6 +1286,9 @@ p b{
 	background: linear-gradient(91.51deg, rgba(0, 0, 0, 0.9) 19.93%, rgba(0, 237, 237, 0.3) 74.42%, rgba(0, 237, 237, 0) 98.71%);
 	opacity: 0.6;
 	z-index: 0;
+}
+.promo.camera-detail:before{
+	display: none;
 }
 .promo img{
 	display: block;
@@ -1301,7 +1307,8 @@ p b{
 }
 .promo.product .frame,
 .promo.camera .frame,
-.promo.integ .frame{
+.promo.integ .frame,
+.promo.camera-detail .frame{
 	top: 220px;
 }
 .promo .holder{
@@ -1384,7 +1391,7 @@ p b{
 .promo .text li + li{
 	margin: 0 0 0 17px;
 }
-.promo .text .btn{
+.promo .btn{
 	text-decoration: none;
 	display: inline-block;
 	vertical-align: top;
@@ -1401,29 +1408,44 @@ p b{
 	text-align: center;
 	transition: all ease 0.5s;
 }
-.promo .text .btn span{
+.promo .btn span{
 	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #00EDED 126.82%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	display: inline-block;
 }
-.promo .text .btn.add{
+.promo .btn.add{
 	background: transparent;
 	color: #fff;
 }
-.promo .text .btn.sec{
+.promo .btn.add span{
+	background-clip: inherit;
+	color: #fff;
+}
+.promo .btn.sec{
 	background: transparent;
 	color: #fff;
 	border-color: #fff;
 }
-.promo .text .btn:hover{
+.promo .btn:hover{
 	opacity: 0.7;
 }
-.promo .text .btn.add:hover,
-.promo .text .btn.sec:hover{
+.promo .btn.add:hover,
+.promo .btn.sec:hover{
 	background: #fff;
 	color: #013775;
+}
+.promo .cam-holder{
+	float: right;
+	border-radius: 100%;
+	padding: 168px;
+	background: #fff;
+}
+.promo .cam-holder img{
+	width: auto;
+	max-width: 100%;
+	margin: auto;
 }
 .promo .align-right{
 	float: right;
@@ -1452,11 +1474,8 @@ p b{
 	background: url(../images/studio-display-stand.png) no-repeat;
 	background-size: cover;
 }
-
-
 #promo-camera #image-holder:after{
 	position: absolute;
-
 	width: 570px;
 	margin: -8px 0 0 -89px;
 	height: 570px;
@@ -1480,8 +1499,6 @@ p b{
 	padding: 11px 4px;
 	background: #000;
 }
-
-
 .post-area{
 	padding: 120px 0 128px;
 }
@@ -2941,7 +2958,8 @@ p b{
 	}
 	.promo.product .text h1,
 	.promo.camera .text h1,
-	.promo.integ .text h1{
+	.promo.integ .text h1,
+	.promo.camera-detail .text h1{
 		padding: 0 0 20px;
 	}
 	.promo .text p{
@@ -3066,10 +3084,10 @@ p b{
 	}
 	.promo.product:before,
 	.promo.camera:before,
-	.promo.integ:before{
+	.promo.integ:before,
+	.promo.camera-detail:before{
 		bottom: 0;
 	}
-	
 	.compare-section .slick-slider-compare .img{
 		float: none;
 		width: 100%;
@@ -3387,7 +3405,8 @@ p b{
 	.promo.camera{
 		background-position: center;
 	}
-	.promo.camera .box{
+	.promo.camera .box,
+	.promo.camera-detail .box{
 		width: 80%;
 	}
 	.promo .video-holder{
