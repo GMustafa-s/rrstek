@@ -2868,9 +2868,9 @@ p b{
 	.about-area .text-holder li.active{
 		margin-bottom: 42px;
 	}
-	.feature-area .heading-area{
+	/* .feature-area .heading-area{
 		padding: 155px 0 50px;
-	}
+	} */
 	.business-area .holder{
 		padding: 15px 55px 0;
 	}
@@ -2961,6 +2961,9 @@ p b{
 	.footer-b .col:nth-child(4){
 		width: 34%;
 		text-align: right;
+	}
+	.feature-area {
+		margin-top: -180px;
 	}
 	.feature-area .product .tooltip.motion{
 		right: 13%;
