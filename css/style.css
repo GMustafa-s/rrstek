@@ -2799,12 +2799,16 @@ p b{
 	#promo-retail #text-banner-overview{
 		width: 700px;
 	}
+	#promo-transport #text-banner-overview{
+		width: 700px;
+	}
 	#promo-healthcare{
 		min-height: 100vh;
 	}
 	#promo-industrial{
 		min-height: 100vh;
 	}
+
 }
 
 @media only screen and (min-width: 767px){
