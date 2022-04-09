@@ -75,6 +75,12 @@ function initSlideToggle(){
 		jQuery(this).toggleClass("active");
 		jQuery(".drop-down").fadeToggle();
 	});
+
+	jQuery('.specifications .btn-open').click(function(e) {
+		e.preventDefault();
+		jQuery(this).toggleClass("active");
+		jQuery(".specifications .holder").slideToggle();
+	});
 }
 
 /** Open Close **/

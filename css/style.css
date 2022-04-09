@@ -1307,9 +1307,11 @@ p b{
 }
 .promo.product .frame,
 .promo.camera .frame,
-.promo.integ .frame,
-.promo.camera-detail .frame{
+.promo.integ .frame{
 	top: 220px;
+}
+.promo.camera-detail .frame{
+	top: 310px;
 }
 .promo .holder{
 	width: 100%;
@@ -1428,6 +1430,19 @@ p b{
 	color: #fff;
 	border-color: #fff;
 }
+.promo.camera-detail .btn:after{
+	display: none;
+}
+.promo.camera-detail .btn.default{
+	background: transparent;
+}
+.promo.camera-detail .btn.default span{
+	color: #fff;
+	background: transparent;
+	-webkit-text-fill-color: inherit;
+	-webkit-background-clip: inherit;
+	background-clip: inherit;
+}
 .promo .btn:hover{
 	opacity: 0.7;
 }
@@ -1439,8 +1454,9 @@ p b{
 .promo .cam-holder{
 	float: right;
 	border-radius: 100%;
-	padding: 168px;
+	padding: 80px;
 	background: #fff;
+	margin: -80px 0 80px;
 }
 .promo .cam-holder img{
 	width: auto;
@@ -2663,6 +2679,220 @@ p b{
 	vertical-align: middle;
 	margin: 0 0 0 10px;
 }
+.achievements{
+	padding: 40px 0;
+	margin-bottom: 70px;
+	background: linear-gradient(116.47deg, rgba(15, 0, 226, 0.7) -5.53%, rgba(0, 237, 237, 0.7) 126.82%);
+}
+.achievements .holder{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.achievements .txt{
+	font-size: 18px;
+	line-height: 32px;
+	color: #fff;
+}
+.achievements h2{
+	margin: 0;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 72px;
+	color: #fff;
+}
+.solutions-area{
+	padding: 80px 0;
+}
+.map-area .heading,
+.advantages-area .heading,
+.solutions-area .heading,
+.specifications .heading,
+.download-area .heading{
+	padding-bottom: 40px;
+}
+.map-area .heading h2,
+.advantages-area .heading h2,
+.download-area .heading h2,
+.solutions-area .heading h2,
+.specifications .heading h2{
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 68px;
+	margin: 0;
+}
+.map-area .heading.center h2,
+.advantages-area .heading.center h2,
+.solutions-area .heading.center h2{
+	text-align: center;
+}
+.map-area .heading h2 span,
+.advantages-area .heading h2 span,
+.download-area .heading h2 span,
+.solutions-area .heading h2 span,
+.specifications .heading h2 span{
+	display: block;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+.map-area .heading h2 i,
+.advantages-area .heading h2 i,
+.download-area .heading h2 i,
+.specifications .heading h2 i,
+.solutions-area .heading h2 i{
+	font-style: normal;
+	background: linear-gradient(116.47deg, #0F00E2 -5.53%, #00EDED 126.82%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+.solutions-area .holder{
+	overflow: hidden;
+	margin: 0 -16px;
+}
+.solutions-area .txt-box{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 16px 32px;
+	width: 42%;
+	padding: 32px;
+	color: #fff;
+	background: linear-gradient(116.47deg, rgba(15, 0, 226, 0.7) -5.53%, rgba(0, 237, 237, 0.7) 126.82%);
+}
+.solutions-area .txt-box .ico{
+	float: left;
+	width: 50px;
+	margin: 11px 32px 0 0;
+}
+.solutions-area .txt-box .frame{
+	overflow: hidden;
+	font-size: 24px;
+	line-height: 36px;
+}
+.specifications{
+	padding-bottom: 125px;
+}
+.specifications .heading a{
+	position: relative;
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 0 100px 0 0;
+}
+.specifications .heading a:after{
+	position: absolute;
+	right: 0;
+	top: 16px;
+	content: '';
+	background: url(../images/ico-circle-down-gradient.svg) no-repeat;
+	width: 65px;
+	height: 64px;
+	background-size: cover;
+	transition: all ease 0.5s;
+	transform: rotate(180deg);
+}
+.specifications .heading a.active:after{
+	transform: rotate(0deg);
+}
+.specifications .holder{
+	overflow: hidden;
+}
+.specifications .col{
+	overflow: hidden;
+	background: rgba(5, 0, 129, 0.1);
+}
+.specifications .col .row{
+	float: left;
+	width: 50%;
+	padding: 28px;
+	font-size: 18px;
+	line-height: 32px;
+	box-sizing: border-box;
+}
+.specifications .col:nth-child(even){
+	background: rgba(15, 0, 226, 0.05);
+}
+.download-area{
+	padding: 0 0 88px;
+}
+.download-area .btn a{
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 12px 28px;
+	background: linear-gradient(116.47deg, #020050 -5.53%, #0F00E2 126.82%);
+	box-shadow: 0 10px 60px rgba(114, 71, 121, 0.1);
+	border-radius: 40px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 32px;
+	color: #fff;
+}
+.download-area .btn span{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 11px;
+}
+.download-area .btn .ico{
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0 0 -3px;
+}
+.advantages-area{
+	padding: 0 0 180px;
+}
+.advantages-area .holder{
+	overflow: hidden;
+	margin: 0 -5px;
+}
+.advantages-area .box{
+	float: left;
+	width: 23%;
+	margin: 0 10px 20px;
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+}
+.advantages-area .box .ico{
+	width: 140px;
+	height: 140px;
+	padding: 40px;
+	background: linear-gradient(116.47deg, rgba(15, 0, 226, 0.7) -5.53%, rgba(0, 237, 237, 0.7) 126.82%);
+	border-radius: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin: 0 auto 16px;
+}
+.overview-section{
+	padding: 40px 0;
+	margin: 0 0 120px;
+	background: linear-gradient(116.47deg, rgba(15, 0, 226, 0.7) -5.53%, rgba(0, 237, 237, 0.7) 126.82%);
+}
+.overview-section .holder{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.overview-section .text-box{
+	color: #fff;
+	font-size: 18px;
+	line-height: 32px; 
+}
+.overview-section .text-box h3{
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 72px;
+}
+.map-area img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 /** Animation stylings **/
 @media only screen and (min-width: 1px){
 	.viewport-holder{
@@ -2699,6 +2929,21 @@ p b{
 	}
 	.viewport-holder.delay-10{
 		transition-delay: 3.1s;
+	}
+	.viewport-holder.delay-11{
+		transition-delay: 3.4s;
+	}
+	.viewport-holder.delay-12{
+		transition-delay: 3.8s;
+	}
+	.viewport-holder.delay-13{
+		transition-delay: 4.1s;
+	}
+	.viewport-holder.delay-14{
+		transition-delay: 4.4s;
+	}
+	.viewport-holder.delay-15{
+		transition-delay: 4.8s;
 	}
 	.viewport-holder.viewport-active{
 		opacity: 1;
@@ -2968,6 +3213,9 @@ p b{
 	.compare-section .slick-slider-compare .img{
 		width: 44%;
 	}
+	.solutions-area .txt-box{
+		width: 41%;
+	}
 }
 @media only screen and (max-width: 1199px){
 	.header-b .text,
@@ -3137,6 +3385,21 @@ p b{
 	}
 	.about-area .img-box .img{
 		position: static;
+	}
+	.promo.camera-detail .box{
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.promo .cam-holder{
+		max-width: 380px;
+		margin: 0 auto 50px;
+		float: none;
+	}
+	.solutions-area .txt-box{
+		width: 40%;
+	}
+	.advantages-area .box{
+		width: 22%;
 	}
 }
 @media only screen and (max-width: 992px){
@@ -3480,6 +3743,42 @@ p b{
 	}
 	.btn-holder .btn{
 		margin-bottom: 15px;
+	}
+	.achievements .holder{
+		display: inherit;
+		overflow: hidden;
+	}
+	.achievements .txt{
+		float: left;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	.solutions-area .holder{
+		margin: 0;
+	}
+	.solutions-area .txt-box{
+		display: block;
+		width: 100%;
+		margin: 0 0 32px;
+		box-sizing: border-box;
+	}
+	.advantages-area .box{
+		width: 21%;
+	}
+	.advantages-area .box .ico{
+		width: auto;
+		height: auto;
+		max-width: 140px;
+		max-height: 140px;
+	}
+	.overview-section .holder{
+		display: inherit;
+		overflow: hidden;
+	}
+	.overview-section .holder .text-box{
+		float: left;
+		width: 50%;
+		margin-bottom: 50px;
 	}
 }
 @media only screen and (max-width: 767px){
@@ -4478,6 +4777,149 @@ p b{
 		height: 64px;
 		right: 264px;
 		top: 500px;
+	}
+	.promo.camera-detail .box{
+		width: 100%;
+	}
+	.promo .cam-holder{
+		max-width: 260px;
+		margin-top: 50px;
+	}
+	.achievements .holder{
+		text-align: center;
+	}
+	.achievements .txt{
+		font-size: 12px;
+		line-height: 18px;
+		display: inline-block;
+		width: 48%;
+		float: none;
+		text-align: left;
+	}
+	.achievements h2{
+		font-size: 32px;
+		line-height: 48px;
+	}
+	.achievements h2 .ico{
+		max-width: 30px;
+		display: inline-block;
+	}
+	.achievements h2 .ico img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.map-area .heading h2,
+	.advantages-area .heading h2,
+	.download-area .heading h2,
+	.solutions-area .heading h2,
+	.specifications .heading h2{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.map-area .heading h2 span,
+	.advantages-area .heading h2 span,
+	.download-area .heading h2 span,
+	.solutions-area .heading h2 span,
+	.specifications .heading h2 span{
+		font-size: 12px;
+		line-height: 24px;
+	}
+	.solutions-area .txt-box{
+		padding: 25px 10px 25px 25px;
+		margin-bottom: 20px;
+	}
+	.solutions-area .txt-box .ico{
+		width: 30px;
+	}
+	.solutions-area .txt-box .ico img{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-right: 22px;
+	}
+	.solutions-area .txt-box .frame{
+		font-size: 20px;
+		line-height: 32px;
+	}
+	.specifications .col .row{
+		font-size: 12px;
+		line-height: 18px;
+		padding: 16px;
+	}
+	.specifications .heading a:after{
+		width: 32px;
+		height: 32px;
+		top: 30px;
+	}
+	.map-area .heading,
+	.advantages-area .heading,
+	.solutions-area .heading,
+	.specifications .heading,
+	.download-area .heading{
+		padding-bottom: 24px;
+	}
+	.specifications{
+		padding-bottom: 20px;
+	}
+	.achievements{
+		margin-bottom: 0;
+	}
+	.solutions-area{
+		padding: 40px 0;
+	}
+	.download-area .btn a{
+		font-size: 12px;
+		line-height: 18px;
+		padding: 10px 20px;
+	}
+	.download-area .btn .ico{
+		width: 15px;
+		margin: 0 0 2px;
+	}
+	.download-area .btn .ico img{
+		display: block;
+		width: 100%;
+	}
+	.advantages-area .box .ico{
+		width: 68px;
+		height: 68px;
+		padding: 0;
+	}
+	.advantages-area .box .ico i{
+		width: 22px;
+		height: 22px;
+	}
+	.advantages-area .box .ico img{
+		display: block;
+		width: 100%;
+	}
+	.advantages-area .box{
+		width: 42%;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.advantages-area{
+		padding: 0 0 30px;
+	}
+	.overview-section .text-box h3{
+		font-size: 32px;
+		line-height: 48px;
+	}
+	.overview-section .text-box h3 .ico{
+		width: 28px;
+		display: inline-block;
+	}
+	.overview-section .text-box h3 .ico img{
+		display: block;
+		width: 100%;
+	}
+	.overview-section .holder .text-box{
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.overview-section{
+		margin: 0 0 20px;
 	}
 }
 @media only screen and (max-width: 480px){
