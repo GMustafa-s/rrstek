@@ -1267,6 +1267,49 @@ p b{
 	background-position: center;
 	z-index: 1;
 }
+#promo-retail{
+	background: url(../images/Industries/Retail/RetailImage_background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-real-estate{
+	background: url(../images/Industries/Real-estate/Real-estate-backgroundImg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-industrial{
+	background: url(../images/Industries/Industrial/IndustrialBackground.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-solutions{
+	background: url(../images/Solutions/SolutionsBackground.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-healthcare{
+	background: url(../images/Industries/Healthcare/HealthcareBackground.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-publicSafety{
+	background: url(../images/Industries/Public-safety/PublicSafety-background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+#promo-transport{
+	background: url(../images/Industries/transport-and-storage/transport_and_storage_background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
 .promo.camera{
 	background: url(../images/banner-camera.jpg) no-repeat;
 	background-size: cover;
@@ -2978,6 +3021,41 @@ p b{
 	}
 }
 
+@media only screen and (min-width: 800px){
+	#text-banner-overview{
+		font-size: smaller;
+		width: 528px;
+	}
+	
+	#text-banner-overview p{
+		padding-top: 0px;
+		margin-bottom: 0;
+	}
+	.promo .text .btn{
+		margin-top: 50px;
+	}
+
+	#promo-healthcare #text-banner-overview{
+		width: 828px;
+	}
+	#promo-industrial #text-banner-overview{
+		width: 828px;
+	}
+	#promo-retail #text-banner-overview{
+		width: 700px;
+	}
+	#promo-transport #text-banner-overview{
+		width: 700px;
+	}
+	#promo-healthcare{
+		min-height: 100vh;
+	}
+	#promo-industrial{
+		min-height: 100vh;
+	}
+
+}
+
 @media only screen and (min-width: 767px){
 
 	/** Carousel Stylings Reset on Large Screens **/
@@ -3039,9 +3117,9 @@ p b{
 	.about-area .text-holder li.active{
 		margin-bottom: 42px;
 	}
-	.feature-area .heading-area{
+	/* .feature-area .heading-area{
 		padding: 155px 0 50px;
-	}
+	} */
 	.business-area .holder{
 		padding: 15px 55px 0;
 	}
@@ -3133,6 +3211,9 @@ p b{
 		width: 34%;
 		text-align: right;
 	}
+	.feature-area {
+		margin-top: -180px;
+	}
 	.feature-area .product .tooltip.motion{
 		right: 13%;
 		top: -13%;
@@ -3218,6 +3299,7 @@ p b{
 	}
 }
 @media only screen and (max-width: 1199px){
+
 	.header-b .text,
 	.header-b .desc{
 		padding: 0;
@@ -3470,9 +3552,9 @@ p b{
 		width: 46%;
 		display: inline-block;
 	}
-	#nav .drop-down{
+	/* #nav .drop-down{
 		width: 720px;
-	}
+	} */
 	#header{
 		padding: 42px 50px 0;
 	}
