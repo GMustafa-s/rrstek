@@ -1255,6 +1255,12 @@ p b{
 	background-size: cover;
 	z-index: 1;
 }
+
+#promo-detail-cases{
+	background: url(../images/About-rrstek/Bg-Image.png) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
 #promo-business{
 	background: url(../images/Business/business-bg-banner.png) no-repeat;
 	background-size: cover;
@@ -1386,6 +1392,7 @@ p b{
 	width: 42%;
 }
 .promo .breadcrumbs{
+	width: 700px;
 	margin: -42px 0 26px;
 }
 .promo .breadcrumbs li{
@@ -2274,6 +2281,16 @@ p b{
 	font-size: 44px;
 	line-height: 68px;
 }
+ #image-left-aligned .img-box{
+	float: left;
+	margin-left: 0;
+
+}
+#image-left-aligned .text-box{
+	padding-left: 100px !important;
+}
+
+
 .article-holder .text-box h2 span{
 	display: block;
 	font-weight: 500;
@@ -3018,9 +3035,28 @@ p b{
 		opacity: 1;
 		visibility: visible;
 		margin-top: 0;
+		
 	}
 }
-
+#text-banner-overview img{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+.vl {
+	margin: 30px 0 30px 10px;
+	border-left: 1px solid white;
+	height: 120px;
+}
+#text-banner-overview img:hover {
+	animation: ease-in;
+	width: 22px;
+	height: 22px;
+}
 @media only screen and (min-width: 800px){
 	#text-banner-overview{
 		font-size: smaller;
@@ -3299,7 +3335,9 @@ p b{
 	}
 }
 @media only screen and (max-width: 1199px){
-
+	#image-left-aligned .text-box{
+		padding-left: 60px !important;
+	}
 	.header-b .text,
 	.header-b .desc{
 		padding: 0;
@@ -3485,6 +3523,9 @@ p b{
 	}
 }
 @media only screen and (max-width: 992px){
+	#image-left-aligned .text-box{
+		padding-left: 10px !important;
+	}
 	.header-b .text,
 	.header-b .desc,
 	.link-holder li,
@@ -3772,6 +3813,7 @@ p b{
 	.article-holder{
 		padding-top: 100px;
 	}
+
 	.article-holder .article:nth-child(odd) .img-box{
 		margin-left: 0;
 	}
