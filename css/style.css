@@ -1261,6 +1261,11 @@ p b{
 	background-size: cover;
 	z-index: 1;
 }
+#promo-contact-us{
+	background: url(../images/contact-us-bg.png) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
 #promo-business{
 	background: url(../images/Business/business-bg-banner.png) no-repeat;
 	background-size: cover;
@@ -2320,6 +2325,22 @@ p b{
 	font-size: 18px;
 	line-height: 27px;
 	color: #fff;
+}
+/** Camera page stylings **/
+.text-scroll {
+	padding-left: 30px;
+}
+.text-scroll h2{
+	font-style: bolder;
+font-weight: 800;
+font-size: 16px;
+line-height: 21px;
+}
+.text-scroll p{
+	font-style: small;
+font-weight: 300;
+font-size: 14px;
+
 }
 /** Camera page stylings **/
 .compare-section{
