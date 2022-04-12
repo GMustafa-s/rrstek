@@ -1257,7 +1257,7 @@ p b{
 }
 
 #promo-detail-cases{
-	background: url(../images/About-rrstek/Bg-Image.png) no-repeat;
+	background: url(../images/Cases/cases-bg-img.png) no-repeat;
 	background-size: cover;
 	z-index: 1;
 }
@@ -1734,7 +1734,7 @@ p b{
 	box-shadow: 15px 25px 70px rgba(114, 71, 121, 0.11);
 	border-radius: 15px;
 }
-.solution-area .carousel .slide img{
+.solution-area .carousel .slide .img{
 	display: block;
 	width: 100%;
 	height: auto;
@@ -1915,7 +1915,7 @@ p b{
 	transform: rotate(-45deg);
 }
 /* Slick slider styles */
-.slick-slider {
+.slick-slider1{
 	position: relative;
 	display: block;
 	box-sizing: border-box;
@@ -1943,8 +1943,8 @@ p b{
 	cursor: pointer;
 	cursor: hand;
 }  
-.slick-slider .slick-track,
-.slick-slider .slick-list {
+.slick-slider1.slick-track,
+.slick-slider1.slick-list {
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
@@ -2241,6 +2241,32 @@ p b{
 	vertical-align: middle;
 	margin-right: 15px;
 }
+
+/* Cases Page Styling */
+
+
+.solution-area .carousel .slide.txt{
+	padding: 12px 28px 28px;
+}
+.solution-area .carousel .slide.txt h3{
+	margin: 0;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+}
+.solution-area .carousel .slide.txt h4{
+	margin: 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(51, 51, 51, 0.8);
+}
+.solution-area .carousel .slide .txt h4 .ico{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
 /** Security page stylings **/
 .article-holder{
 	padding-top: 50px;
