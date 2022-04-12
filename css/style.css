@@ -1257,7 +1257,7 @@ p b{
 }
 
 #promo-detail-cases{
-	background: url(../images/Cases/cases-bg-img.png) no-repeat;
+	background: url(../images/Cases/deail-cases-bg-Image.png) no-repeat;
 	background-size: cover;
 	z-index: 1;
 }
@@ -3098,6 +3098,16 @@ font-size: 14px;
 	position: absolute;
 	width: 20px;
 	height: 20px;
+}
+#text-banner-overview .map-pin-img{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 22.4px;
+	height: 27.04px;
 }
 .vl {
 	margin: 30px 0 30px 10px;
