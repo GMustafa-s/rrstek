@@ -1261,6 +1261,16 @@ p b{
 	background-size: cover;
 	z-index: 1;
 }
+#promo-demo{
+	background: url(../images/Solutions/demo-bg-img.png) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+#promo-about-rrstek{
+	background: url(../images/About-rrstek/Bg-Image.png) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
 #promo-cases{
 	background: url(../images/Cases/cases-bg-img.png) no-repeat;
 	background-size: cover;
@@ -2247,9 +2257,31 @@ p b{
 	margin-right: 15px;
 }
 
+/* Demo Page Styling */
+.solutions-area .holder{
+	overflow: hidden;
+	margin: 0 -16px;
+}
+.solutions-area #text-box{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 16px 32px;
+	width: 25%;
+	padding: 32px;
+	color: #fff;
+	background: linear-gradient(116.47deg, rgba(15, 0, 226, 0.7) -5.53%, rgba(0, 237, 237, 0.7) 126.82%);
+}
+.solutions-area #text-box .ico{
+	float: left;
+	width: 50px;
+	margin: 11px 32px 0 0;
+}
+.solutions-area #text-box .frame{
+	overflow: hidden;
+	font-size: 18px;
+	line-height: 36px;
+}
 /* Cases Page Styling */
-
-
 .solution-area .carousel .slide.txt{
 	padding: 12px 28px 28px;
 }
@@ -3395,7 +3427,14 @@ font-size: 14px;
 	.solutions-area .txt-box{
 		width: 41%;
 	}
-}
+	.solutions-area #text-box{
+		width: 23%;
+		margin: 0;
+	}
+	.solutions-area #text-box p{
+		font-size: 14px;
+	}
+
 @media only screen and (max-width: 1199px){
 	#image-left-aligned .text-box{
 		padding-left: 60px !important;
