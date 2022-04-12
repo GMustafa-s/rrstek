@@ -1261,6 +1261,11 @@ p b{
 	background-size: cover;
 	z-index: 1;
 }
+#promo-cases{
+	background: url(../images/Cases/cases-bg-img.png) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
 #promo-contact-us{
 	background: url(../images/contact-us-bg.png) no-repeat;
 	background-size: cover;
