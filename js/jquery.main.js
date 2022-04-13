@@ -174,7 +174,7 @@ function initSlickCarousel() {
 			breakpoint: 992,
 			settings: {
 				slidesToScroll: 1,
-				slidesToShow: 3,
+				slidesToShow: 4,
 				autoplay: true,
 				variableWidth: true
 			}

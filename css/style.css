@@ -493,7 +493,7 @@ p b{
 	color: #fff;
 	padding: 0 35px 12px 0;
 	width: 70%;
-	background: url(../images/ico-circle-right.svg) no-repeat 100% 0;
+	background: url(../images/ico-circle-right.svg) no-repeat 99% 0;
 }
 .link-holder li a:hover{
 	opacity: 0.7;
@@ -3363,9 +3363,6 @@ font-size: 14px;
 		width: 34%;
 		text-align: right;
 	}
-	.feature-area {
-		margin-top: -180px;
-	}
 	.feature-area .product .tooltip.motion{
 		right: 13%;
 		top: -13%;
@@ -3452,6 +3449,9 @@ font-size: 14px;
 	.solutions-area .text-box{
 		width: 23%;
 		margin: 0;
+	}
+	.solutions-area.demo .text-box{
+		margin: 0 1%;
 	}
 	.solutions-area .text-box p{
 		font-size: 14px;
@@ -4567,7 +4567,8 @@ font-size: 14px;
 		border-radius: 0 0 20px 20px;
 	}
 	.solution-area .carousel.case .mask{
-		height: 320px !important;	
+		height: 320px !important;
+		width: 100% !important;
 	}
 	.solution-area .carousel .slideset{
 		text-align: left;
@@ -4581,8 +4582,17 @@ font-size: 14px;
 		border-radius: 20px;
 		box-shadow: 0 7px 12px 2px rgba(114, 71, 121, 0.11);;
 	}
+	.solution-area .carousel.case{
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
 	.solution-area .carousel.case .slide{
 		margin-bottom: 30px !important;
+		width: 100% !important;
+		padding: 15px 15px 0 !important;
+		box-sizing: border-box;
+		margin: 0 !important;
 	}
 	.solution-area .carousel .frame{
 		border-radius: 20px;
@@ -4747,7 +4757,7 @@ font-size: 14px;
 		left: 0;
 	}
 	.brands-logo .slick-initialized .slick-slide{
-		width: 110px !important;
+		width: 85px !important;
 	}
 	.about-area .img-box .compatible .img.center{
 		max-width: 240px;
@@ -5188,6 +5198,8 @@ font-size: 14px;
     	align-items: center;
 		box-sizing: border-box;
 		padding: 27px;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.solutions-area.demo .text-box .ico{
 		width: 34px;
@@ -5214,7 +5226,7 @@ font-size: 14px;
 		width: 280px;
 	}
 	.brands-logo .slick-initialized .slick-slide{
-		width: 90px !important;
+		width: 70px !important;
 	}
 	.about-area .img-box .compatible .img.left,
 	.about-area .img-box .compatible .img.right,
