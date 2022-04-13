@@ -1754,9 +1754,22 @@ p b{
 	width: 100%;
 	height: auto;
 }
+.solution-area .carousel .slide .img img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
 .solution-area .carousel .txt-box{
 	padding: 20px 20px 15px;
 	text-align: left;
+}
+.solution-area .carousel .slide .txt{
+	padding: 12px 20px;
+}
+.solution-area .carousel .slide .txt h4{
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(51, 51, 51, 0.8);
 }
 .solution-area .carousel .more{
 	text-decoration: none;
@@ -2262,7 +2275,7 @@ p b{
 	overflow: hidden;
 	margin: 0 -16px;
 }
-.solutions-area #text-box{
+.solutions-area .text-box{
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 16px 32px;
@@ -2271,12 +2284,14 @@ p b{
 	color: #fff;
 	background: linear-gradient(116.47deg, rgba(15, 0, 226, 0.7) -5.53%, rgba(0, 237, 237, 0.7) 126.82%);
 }
-.solutions-area #text-box .ico{
+.solutions-area .text-box .ico{
 	float: left;
 	width: 50px;
 	margin: 11px 32px 0 0;
+	display: block;
+	margin-bottom: 10px;
 }
-.solutions-area #text-box .frame{
+.solutions-area .text-box .frame{
 	overflow: hidden;
 	font-size: 18px;
 	line-height: 36px;
@@ -2301,7 +2316,7 @@ p b{
 .solution-area .carousel .slide .txt h4 .ico{
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 15px;
+	margin: 0 8px -3px 0;
 }
 
 /** Security page stylings **/
@@ -3206,6 +3221,13 @@ font-size: 14px;
 	#nav .list li .label{
 		display: none;
 	}
+	.solutions-area.demo .holder{
+		display: flex;
+	}
+	.solutions-area.demo .text-box .ico{
+		float: none;
+		width: 100%;
+	}
 }
 /** Responsive Stylings **/
 @media only screen and (max-width: 1350px){
@@ -3427,11 +3449,11 @@ font-size: 14px;
 	.solutions-area .txt-box{
 		width: 41%;
 	}
-	.solutions-area #text-box{
+	.solutions-area .text-box{
 		width: 23%;
 		margin: 0;
 	}
-	.solutions-area #text-box p{
+	.solutions-area .text-box p{
 		font-size: 14px;
 	}
 
@@ -4544,6 +4566,9 @@ font-size: 14px;
 		margin: auto;
 		border-radius: 0 0 20px 20px;
 	}
+	.solution-area .carousel.case .mask{
+		height: 320px !important;	
+	}
 	.solution-area .carousel .slideset{
 		text-align: left;
 	}
@@ -4555,6 +4580,9 @@ font-size: 14px;
 		float: left;
 		border-radius: 20px;
 		box-shadow: 0 7px 12px 2px rgba(114, 71, 121, 0.11);;
+	}
+	.solution-area .carousel.case .slide{
+		margin-bottom: 30px !important;
 	}
 	.solution-area .carousel .frame{
 		border-radius: 20px;
@@ -5145,6 +5173,34 @@ font-size: 14px;
 	}
 	.overview-section{
 		margin: 0 0 20px;
+	}
+	.solution-area.case .btn-holder{
+		display: none;
+	}
+	.solution-area .carousel .slide .txt h4{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.solutions-area.demo .text-box{
+		width: 100%;
+		margin-bottom: 32px;
+		display: flex;
+    	align-items: center;
+		box-sizing: border-box;
+		padding: 27px;
+	}
+	.solutions-area.demo .text-box .ico{
+		width: 34px;
+		margin-right: 20px;
+	}
+	.solutions-area.demo .text-box .ico img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.solutions-area.demo .text-box p{
+		font-size: 20px;
+		line-height: 32px;
 	}
 }
 @media only screen and (max-width: 480px){
