@@ -522,13 +522,14 @@ p b{
 /** Brands-logo Stylings **/
 .brands-logo{
 	text-align: center;
-	margin: 13px 0 141px;
+	margin: 13px auto 141px;
+	width: 100%;
 }
-.brands-logo li{
+/* .brands-logo li{
 	display: inline-block;
 	vertical-align: middle;
 	width: 19% !important;
-}
+} */
 .brand-holder.add .brands-logo{
 	background: linear-gradient(to right, #556cec, #50bbf1);
 	padding: 60px 0 90px;
@@ -3684,9 +3685,11 @@ font-size: 14px;
 		padding: 30px;
 	}
 	.booking-area .form-area,
-	.link-holder,
-	.brands-logo{
+	.link-holder{
 		margin: 0;
+	}
+	.brands-logo{
+		margin: auto;
 	}
 	.header-b .text-area{
 		padding-left: 0;
@@ -3924,11 +3927,11 @@ font-size: 14px;
 	.promo:before{
 		left: -12%;
 	}
-	.brands-logo .slick-initialized .slick-slide{
+	/* .brands-logo .slick-initialized .slick-slide{
 		display: inline-block;
 		vertical-align: middle;
 		width: 220px !important;
-	}
+	} */
 	.slick-slide img{
 		width: 100%;
 		height: auto;
@@ -4383,7 +4386,7 @@ font-size: 14px;
 		margin-bottom: 31px;
 	}
 	.brands-logo{
-		width: 330px;
+		/* width: 330px; */
 		margin: auto;
 	}
 	.header-b .btn{
@@ -4756,9 +4759,9 @@ font-size: 14px;
 		border-radius: 0 0 150px 0;
 		left: 0;
 	}
-	.brands-logo .slick-initialized .slick-slide{
+	/* .brands-logo .slick-initialized .slick-slide{
 		width: 85px !important;
-	}
+	} */
 	.about-area .img-box .compatible .img.center{
 		max-width: 240px;
 	}
@@ -5222,12 +5225,12 @@ font-size: 14px;
 	.main-camera{
 		padding-top: 150px;
 	}
-	.brands-logo{
+	/* .brands-logo{
 		width: 280px;
 	}
 	.brands-logo .slick-initialized .slick-slide{
 		width: 70px !important;
-	}
+	} */
 	.about-area .img-box .compatible .img.left,
 	.about-area .img-box .compatible .img.right,
 	.about-area .img-box .compatible .img.bottom{

@@ -175,8 +175,7 @@ function initSlickCarousel() {
 			settings: {
 				slidesToScroll: 1,
 				slidesToShow: 4,
-				autoplay: true,
-				variableWidth: true
+				autoplay: true
 			}
 		}]
 	});
