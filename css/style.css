@@ -217,9 +217,9 @@ p b{
 #nav .list:first-child > li + li > a{
 	padding: 22px 0 0;
 }
-#nav .list:first-child > li:first-child > .title{
+/* #nav .list:first-child > li:first-child > .title{
 	padding-bottom: 5px;
-}
+} */
 #nav .list:last-child li:last-child > .title{
 	padding: 22px 0 0;
 }
