@@ -522,14 +522,13 @@ p b{
 /** Brands-logo Stylings **/
 .brands-logo{
 	text-align: center;
-	margin: 13px auto 141px;
-	width: 100%;
+	margin: 13px 0 141px;
 }
-/* .brands-logo li{
+.brands-logo li{
 	display: inline-block;
 	vertical-align: middle;
 	width: 19% !important;
-} */
+}
 .brand-holder.add .brands-logo{
 	background: linear-gradient(to right, #556cec, #50bbf1);
 	padding: 60px 0 90px;
@@ -3685,11 +3684,9 @@ font-size: 14px;
 		padding: 30px;
 	}
 	.booking-area .form-area,
-	.link-holder{
-		margin: 0;
-	}
+	.link-holder,
 	.brands-logo{
-		margin: auto;
+		margin: 0;
 	}
 	.header-b .text-area{
 		padding-left: 0;
@@ -3927,11 +3924,11 @@ font-size: 14px;
 	.promo:before{
 		left: -12%;
 	}
-	/* .brands-logo .slick-initialized .slick-slide{
+	.brands-logo .slick-initialized .slick-slide{
 		display: inline-block;
 		vertical-align: middle;
 		width: 220px !important;
-	} */
+	}
 	.slick-slide img{
 		width: 100%;
 		height: auto;
@@ -4386,7 +4383,7 @@ font-size: 14px;
 		margin-bottom: 31px;
 	}
 	.brands-logo{
-		/* width: 330px; */
+		width: 330px;
 		margin: auto;
 	}
 	.header-b .btn{
@@ -4759,9 +4756,9 @@ font-size: 14px;
 		border-radius: 0 0 150px 0;
 		left: 0;
 	}
-	/* .brands-logo .slick-initialized .slick-slide{
+	.brands-logo .slick-initialized .slick-slide{
 		width: 85px !important;
-	} */
+	}
 	.about-area .img-box .compatible .img.center{
 		max-width: 240px;
 	}
@@ -5225,116 +5222,38 @@ font-size: 14px;
 	.main-camera{
 		padding-top: 150px;
 	}
+	.brands-logo{
+		width: 280px;
+	}
+	.brands-logo .slick-initialized .slick-slide{
+		width: 70px !important;
+	}
+ight: 0;
+	}
+	.solutions-area.demo .text-box .ico{
+		width: 34px;
+		margin-right: 20px;
+	}
+	.solutions-area.demo .text-box .ico img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.solutions-area.demo .text-box p{
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.brand-holder.add .brands-logo li{
+		max-width: 110px;
+	}
+	.main-camera{
+		padding-top: 150px;
+	}
 	/* .brands-logo{
 		width: 280px;
 	}
 	.brands-logo .slick-initialized .slick-slide{
 		width: 70px !important;
 	} */
-	.about-area .img-box .compatible .img.left,
-	.about-area .img-box .compatible .img.right,
-	.about-area .img-box .compatible .img.bottom{
-		max-width: 45px;
-	}
-	.about-area .img-box .compatible .img.center{
-		max-width: 100px;
-	}
-	.about-area .img-box .compatible{
-		min-height: 130px;
-	}
-	.about-area .img-box .customized{
-		min-height: 180px;
-	}
-	.about-area .img-box .customized .img.left,
-	.about-area .img-box .customized .img.right,
-	.about-area .img-box .customized .img.bottom{
-		max-width: 100px;
-	}
-	.about-area .customized .img.right,
-	.about-area .img-box .customized .img.bottom{
-		right: 0;
-	}
-	.about-area .img-box .project{
-		min-height: 200px;
-	}
-	.about-area .img-box .project .img.left{
-		max-width: 202px;
-	}
-	.about-area .img-box .project .img.center{
-		top: 54px;
-		max-width: 75px;
-	}
-	.about-area .img-box .pre-sale{
-		min-height: 180px;
-	}
-	.about-area .img-box .pre-sale .img.center{
-		max-width: 202px;
-	}
-	.about-area .img-box .pre-sale .img.right{
-		max-width: 110px;
-		top: 110px;
-	}
-	.about-area .img-box .pre-sale .img.bottom{
-		max-width: 32px;
-		top: 110px;
-	}
-	.about-area .img-box .technical{
-		min-height: 170px;
-	}
-	.about-area .img-box .technical .img.center{
-		max-width: 202px;
-		margin: 0 auto;
-		right: 0;
-	}
-	.about-area .img-box .technical .img.bottom{
-		max-width: 80px;
-	}
-	.about-area .img-box .advertising{
-		min-height: 170px;
-	}
-	.about-area .img-box .advertising .img.center{
-		max-width: 202px;
-	}
-	.about-area .img-box .compatible,
-	.about-area .img-box .customized,
-	.about-area .img-box .project,
-	.about-area .img-box .pre-sale,
-	.about-area .img-box .technical,
-	.about-area .img-box .advertising{
-		width: 200px;
-	}
-	.visual.home .text-area .text{
-		max-width: 70%;
-	}
-	.visual.home .bg-border {
-		margin: 0 0 0 -410px;
-	}
-	.visual.home .head-cam{
-		right: 245px;
-		top: 570px;
-	}
-	.visual.home .align-left{
-		margin-left: 0;
-		width: 100%;
-	}
-	/* .visual.home .mask{
-		height: 348px;
-    	width: 637px;
-	}
-	.visual.home .video video{
-		height: 468px;
-    	width: 624px;
-	}
-	.visual.home .bg-border {
-		margin: 0 0 0 -180px;
-		max-height: 468px;
-	}
-	.visual.home .text-area{
-		padding-top: 100px;
-		margin-top: 0;
-	}
-	.visual.home .head-cam {
-		right: 159px;
-		top: 310px;
-	} */
-}}
