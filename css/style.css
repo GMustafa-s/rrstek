@@ -130,10 +130,11 @@ p b{
 	transition: all ease 0.5s;
 }
 .header-t .logo{
-	margin: 0 0 0 47px;
+	/* margin: 0 0 0 47px; */
 	display: inline-block;
 	background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0px 10px 40px rgb(114 71 121 / 15%);
+	box-shadow: 0px 10px 40px rgba(114, 71, 121, 0.15);
+	backdrop-filter: blur(24px);
     padding: 12px 32px;
 	border-radius: 60px;
 }
@@ -149,8 +150,9 @@ p b{
 	top: 26px;
 	right: 0;
 	z-index: 5;
-	background: #fff;
-	box-shadow: 0 10px 40px rgba(114, 71, 121, 0.15);
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0px 10px 40px rgba(114, 71, 121, 0.15);
+	backdrop-filter: blur(24px);
 	border-radius: 100px 0 0 100px;
 }
 #nav.nav-active .open{
@@ -496,7 +498,7 @@ p b{
 .link-holder li{
 	display: inline-block;
 	vertical-align: top;
-	width: 33%;
+	width: 24%;
 }
 .link-holder.col2 li{
 	width: 48%;
@@ -1248,7 +1250,7 @@ p b{
 }
 .promo{
 	position: relative;
-	min-height: 700px;
+	min-height: 100vh
 }
 .promo:before{
 	position: absolute;
@@ -1421,7 +1423,7 @@ p b{
 	color: #fff;
 }
 .promo .box{
-	padding: 0 0 59px 47px;
+	padding: 0 0 59px 0px;
 	float: left;
 	width: 35%;
 	position: relative;
@@ -3192,6 +3194,9 @@ font-size: 14px;
 	height: 22px;
 }
 @media only screen and (min-width: 800px){
+	#link-holder-3col li{
+		min-width: 33%;
+	}
 	#text-banner-overview{
 		font-size: smaller;
 		width: 528px;
