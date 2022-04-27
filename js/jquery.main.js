@@ -147,10 +147,15 @@ function initNavActive(){
 		e.stopPropagation();
 		$("#nav").toggleClass('nav-active');
 	});
-	$(document).on('click',function(e){
-		if(($(e.target) != $el) && ($ee.hasClass('nav-active'))){
-		$ee.removeClass('nav-active');
-	}
+	// $(document).on('click',function(e){
+	// $('#nav').mouseout(function(){
+	// 	if(($(e.target) != $el) && ($ee.hasClass('nav-active'))){
+	// 		$ee.removeClass('nav-active');
+	// 	}
+	// });
+
+	$('#nav').on('mouseleave', function() {
+		$('#nav').removeClass("nav-active");
 	});
 
 }

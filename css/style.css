@@ -4052,6 +4052,9 @@ font-size: 14px;
 		width: 50%;
 		margin-bottom: 50px;
 	}
+	.link-holder.col2-tab li{
+		width: 48%;
+	}
 }
 @media only screen and (max-width: 767px){
 	.container{
@@ -5238,6 +5241,9 @@ font-size: 14px;
 	.solutions-area.demo .text-box p{
 		font-size: 20px;
 		line-height: 32px;
+	}
+	.link-holder.col2-tab li{
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 480px){
