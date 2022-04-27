@@ -513,6 +513,20 @@
 		  </div>
 		</footer>
 	</div>
+	<script>
+		var div_top = $('#header').offset().top;
+
+$(window).scroll(function() {
+    var window_top = $(window).scrollTop() - 0;
+    if (window_top > div_top) {
+        if (!$('#header').is('.sticky')) {
+            $('#header').addClass('sticky');
+        }
+    } else {
+        $('#header').removeClass('sticky');
+    }
+});
+	</script>
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/jquery.main.js"></script>
 </body>

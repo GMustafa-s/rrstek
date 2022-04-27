@@ -217,9 +217,9 @@ p b{
 #nav .list:first-child > li + li > a{
 	padding: 22px 0 0;
 }
-/* #nav .list:first-child > li:first-child > .title{
+#nav .list:first-child > li:first-child > .title{
 	padding-bottom: 5px;
-} */
+}
 #nav .list:last-child li:last-child > .title{
 	padding: 22px 0 0;
 }
@@ -5228,7 +5228,7 @@ font-size: 14px;
 	.brands-logo .slick-initialized .slick-slide{
 		width: 70px !important;
 	}
-ight: 0;
+
 	}
 	.solutions-area.demo .text-box .ico{
 		width: 34px;
@@ -5257,3 +5257,4 @@ ight: 0;
 	.brands-logo .slick-initialized .slick-slide{
 		width: 70px !important;
 	} */
+}
