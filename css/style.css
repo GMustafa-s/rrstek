@@ -116,14 +116,13 @@ p b{
 #header.sticky .header-t{
 	margin: 0;
 }
-.header-t.header-fixed{
+nav{
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	z-index: 10;
 	padding: 30px 0;
-	background: rgba(255, 255, 255, 0.9);
 }
 .header-t{
 	margin: 0 0 90px;
@@ -146,7 +145,7 @@ p b{
 	width: 38px;
 	height: 56px;
 	padding: 8px 56px 8px 35px;
-	position: absolute;
+	position: fixed;
 	top: 26px;
 	right: 0;
 	z-index: 5;
@@ -156,6 +155,7 @@ p b{
 	border-radius: 100px 0 0 100px;
 }
 #nav.nav-active .open{
+	position: fixed;
 	border-radius: 0;
 	box-shadow: none;
 	background: transparent;
@@ -5255,6 +5255,9 @@ font-size: 14px;
 	}
 }
 @media only screen and (max-width: 480px){
+	.promo.integ {
+		height: 520px;
+	}
 	.brand-holder.add .brands-logo li{
 		max-width: 110px;
 	}
@@ -5288,7 +5291,7 @@ font-size: 14px;
 		max-width: 110px;
 	}
 	.main-camera{
-		padding-top: 150px;
+		padding-top: 0px;
 	}
 	/* .brands-logo{
 		width: 280px;
