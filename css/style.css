@@ -712,9 +712,10 @@ nav{
 	content: '';
 	width: 583px;
 	height: 434px;
-	background: url(../images/customize-phyton.png) no-repeat;
-	background-size: cover;
+	background: url(../images/compatible-solution.svg) no-repeat center;
+	background-size: auto;
 	transition: all ease 1s;
+	background-origin: content-box;
 }
 /** Feature Area Stylings **/
 .feature-area{
