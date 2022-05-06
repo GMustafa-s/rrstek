@@ -1254,7 +1254,7 @@ nav{
 }
 .promo:before{
 	position: absolute;
-	left: -20%;
+	left: -32%;
 	top: 0;
 	bottom: 0;
 	width: 100%;
@@ -3244,6 +3244,10 @@ font-size: 14px;
 		width: 100% !important;
 		margin-left: 0 !important;
 	}
+	.solution-area .carousel .slideset img {
+		text-align: center;
+		width: 100%;
+	}
 	.solution-area .carousel .pagination{
 		display: none;
 	}
@@ -4597,7 +4601,7 @@ font-size: 14px;
 		position: relative;
 		overflow: hidden;
 		width: 280px !important;
-		height: 230px !important;
+		height: 300px !important;
 		border: 16px;
 		margin: auto;
 		border-radius: 0 0 20px 20px;
@@ -4776,6 +4780,7 @@ font-size: 14px;
 		margin: 0 0 0 6px;
 	}
 	.promo .video-holder{
+		padding-top: 70px;
 		width: 290px;
 	}
 	.promo .video-holder video{
