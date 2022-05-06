@@ -1521,6 +1521,7 @@ nav{
 	background: transparent;
 	color: #fff;
 	border-color: #fff;
+	margin-top: -50px !important;
 }
 .promo.camera-detail .btn:after{
 	display: none;
@@ -3269,6 +3270,9 @@ font-size: 14px;
 }
 /** Responsive Stylings **/
 @media only screen and (max-width: 1350px){
+	.promo .btn.sec{
+		margin-top: -25px !important;
+	}
 	.container{
 		max-width: 1070px;
 	}
