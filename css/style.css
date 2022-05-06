@@ -1523,6 +1523,9 @@ nav{
 	border-color: #fff;
 	margin-top: -50px !important;
 }
+.promo .btn.sec.w-spe-btn-m{
+	margin-top: 0px !important;
+}
 .promo.camera-detail .btn:after{
 	display: none;
 }
@@ -3082,6 +3085,10 @@ font-size: 14px;
 	max-width: 100%;
 	height: auto;
 }
+.bann-head{
+	display: flex;
+	flex-direction: column;
+}
 /** Animation stylings **/
 @media only screen and (min-width: 1px){
 	.viewport-holder{
@@ -3199,6 +3206,9 @@ font-size: 14px;
 	height: 22px;
 }
 @media only screen and (min-width: 800px){
+	.link-holder li{
+		padding-right: 30px !important;
+	}
 	#link-holder-3col li{
 		min-width: 33%;
 	}
@@ -3237,7 +3247,9 @@ font-size: 14px;
 }
 
 @media only screen and (min-width: 767px){
-
+	.bann-head{
+		flex-direction: row !important;
+	}
 	/** Carousel Stylings Reset on Large Screens **/
 	.solution-area .carousel .mask{
 		height: auto !important;
@@ -5265,6 +5277,9 @@ font-size: 14px;
 	}
 }
 @media only screen and (max-width: 480px){
+	.bann-head{
+		flex-direction: row !important;
+	}
 	.promo.integ {
 		height: 520px;
 	}
@@ -5309,4 +5324,17 @@ font-size: 14px;
 	.brands-logo .slick-initialized .slick-slide{
 		width: 70px !important;
 	} */
+	.video{
+		width: 320px;
+		padding-right: 20px;
+	}
+	.product-info .table thead th{
+		min-width: 125px;
+	}
+	.product-info .table thead .box{
+		min-width: 180px;
+	}
+	.promo:before{
+		background: linear-gradient(202deg, #020050, #00EDED);
+	}
 }
