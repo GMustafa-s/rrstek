@@ -54,6 +54,9 @@ p b{
 	overflow: hidden;
 	width: 100%;
 }
+#link-holder-container{
+	max-width: fit-content;
+}
 .container{
 	max-width: 1295px;
 	margin: 0 auto;
@@ -3210,7 +3213,7 @@ font-size: 14px;
 		padding-right: 30px !important;
 	}
 	#link-holder-3col li{
-		min-width: 33%;
+		min-width: 30%;
 	}
 	#text-banner-overview{
 		font-size: smaller;
@@ -5276,6 +5279,28 @@ font-size: 14px;
 		width: 100%;
 	}
 }
+
+	.solutions-area.demo .text-box .ico{
+		width: 34px;
+		margin-right: 20px;
+	}
+	.solutions-area.demo .text-box .ico img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.solutions-area.demo .text-box p{
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
+@media only screen and (max-width: 1024px){
+	#link-holder-container li{
+		min-width: 29%;
+	}
+
+
+	}
 @media only screen and (max-width: 480px){
 	.bann-head{
 		flex-direction: row !important;
@@ -5295,23 +5320,6 @@ font-size: 14px;
 	.brands-logo .slick-initialized .slick-slide{
 		width: 70px !important;
 	}
-
-	}
-	.solutions-area.demo .text-box .ico{
-		width: 34px;
-		margin-right: 20px;
-	}
-	.solutions-area.demo .text-box .ico img{
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-	.solutions-area.demo .text-box p{
-		font-size: 20px;
-		line-height: 32px;
-	}
-}
-@media only screen and (max-width: 480px){
 	.brand-holder.add .brands-logo li{
 		max-width: 110px;
 	}
