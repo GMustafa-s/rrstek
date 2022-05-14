@@ -501,7 +501,7 @@ nav{
 .link-holder li{
 	display: inline-block;
 	vertical-align: top;
-	width: 24%;
+	width: 30%;
 }
 .link-holder.col2 li{
 	width: 48%;
@@ -1524,7 +1524,7 @@ nav{
 	background: transparent;
 	color: #fff;
 	border-color: #fff;
-	margin-top: -50px !important;
+	margin-top: 50px !important;
 }
 .promo .btn.sec.w-spe-btn-m{
 	margin-top: 0px !important;
@@ -3286,7 +3286,7 @@ font-size: 14px;
 /** Responsive Stylings **/
 @media only screen and (max-width: 1350px){
 	.promo .btn.sec{
-		margin-top: -25px !important;
+		margin-top: 50px !important;
 	}
 	.container{
 		max-width: 1070px;
@@ -5302,6 +5302,9 @@ font-size: 14px;
 
 	}
 @media only screen and (max-width: 480px){
+	.promo .btn.sec{
+		margin-top: 10px !important;
+	}
 	.bann-head{
 		flex-direction: row !important;
 	}
