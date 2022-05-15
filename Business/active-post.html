@@ -267,22 +267,15 @@
 				<div class="container">
 					<h3 class="viewport-holder slideDown"><span>Contact Us</span> Contact Sales for questions or a live video security demo</h3>
 					<form onsubmit="sendEmail(); reset(); return false" method="POST">
-						<!-- Honeypot -->
-						<input type="text" name="_honey" style="display: none;">
-
-						<!-- Disable Captcha -->
-						<input type="hidden" name="_captcha" value="false">
-			  
-						<input type="hidden" name="_next" value="saivra.net/rrstek/success.html" >
 						<div class="holder">
 							<div class="cols viewport-holder slideDown delay-1">
 								<div class="rows">
 									<label for="first-name">First Name <sup>*</sup></label>
-									<input class="form-control" id="first-name" type="text" placeholder="First Name" name="First&nbsp;Name" required>
+									<input class="form-control" id="first-name" type="text" placeholder="First Name" name="first-name" required>
 								</div>
 								<div class="rows">
 									<label for="last-name">Last Name <sup>*</sup></label>
-									<input class="form-control" id="last-name" type="text" placeholder="Last Name" name="Last&nbsp;Name" required>
+									<input class="form-control" id="last-name" type="text" placeholder="Last Name" name="last-name" required>
 								</div>
 								<div class="rows">
 									<label for="email">Email <sup>*</sup></label>
@@ -292,7 +285,7 @@
 							<div class="cols viewport-holder slideDown delay-2">
 								<div class="rows">
 									<label for="region">Region/Country <sup>*</sup></label>
-									<input class="form-control" id="region" type="text" placeholder="Region/Country" name="Country/Region" required>
+									<input class="form-control" id="region" type="text" placeholder="Region/Country" name="region" required>
 								</div>
 								<div class="rows">
 									<label for="message">Message</label>
@@ -429,19 +422,23 @@
 	<script src="../js/jquery-1.11.2.min.js"></script>
 	<script src="../js/jquery.main.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script>
+	<script src="../js/email.js"></script>
+	<!-- <script>
 		function sendEmail(){
     Email.send({
-		SecureToken: "c3770474-ff2a-4a3d-b8bf-5f4c1f94a5cc",
-        To : 'curingdisease@gmail.com',
-        From : "info@rrsteksecurity.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+    SecureToken: "c3770474-ff2a-4a3d-b8bf-5f4c1f94a5cc",
+    To : 'curingdisease@gmail.com',
+    From : document.getElementById(email).value,
+    Subject : "This is the subject",
+    Body : "FirstName: " + document.getElementById("first-name").value,
+    
     }).then(
-      message => alert(message)
+    message => alert("Your Message sent sucessefully")
     );
-}
-	</script>
+    }
+    
+	</script> -->
+
 	
 
 
