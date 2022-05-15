@@ -268,30 +268,33 @@
 			<div class="contact-form">
 				<div class="container">
 					<h3 class="viewport-holder slideDown"><span>Contact Us</span> Contact Sales for questions or a live video security demo</h3>
-					<form action="#">
+					<div class="contact-form">
+				<div class="container">
+					<h3 class="viewport-holder slideDown"><span>Contact Us</span> Contact Sales for questions or a live video security demo</h3>
+					<form onsubmit="sendEmail(); reset(); return false" method="POST">
 						<div class="holder">
 							<div class="cols viewport-holder slideDown delay-1">
 								<div class="rows">
 									<label for="first-name">First Name <sup>*</sup></label>
-									<input class="form-control" id="first-name" type="text" placeholder="First Name" required>
+									<input class="form-control" id="first-name" type="text" placeholder="First Name" name="first-name" required>
 								</div>
 								<div class="rows">
 									<label for="last-name">Last Name <sup>*</sup></label>
-									<input class="form-control" id="last-name" type="text" placeholder="Last Name" required>
+									<input class="form-control" id="last-name" type="text" placeholder="Last Name" name="last-name" required>
 								</div>
 								<div class="rows">
 									<label for="email">Email <sup>*</sup></label>
-									<input class="form-control" id="email" type="email" placeholder="Email" required>
+									<input class="form-control" id="email" type="email" placeholder="Email" name="email" required>
 								</div>
 							</div>
 							<div class="cols viewport-holder slideDown delay-2">
 								<div class="rows">
 									<label for="region">Region/Country <sup>*</sup></label>
-									<input class="form-control" id="region" type="text" placeholder="Region/Country" required>
+									<input class="form-control" id="region" type="text" placeholder="Region/Country" name="region" required>
 								</div>
 								<div class="rows">
 									<label for="message">Message</label>
-									<textarea class="form-control" id="message" cols="30" rows="10" placeholder="Let us know about your needs, interest, and other quetions."></textarea>
+									<textarea class="form-control" id="message" cols="30" rows="10" placeholder="Let us know about your needs, interest, and other quetions." name="message" required></textarea>
 								</div>
 							</div>
 						</div>
@@ -306,6 +309,8 @@
 							<input type="submit" value="Send">
 						</div>
 					</form>
+				</div>
+			</div>
 				</div>
 			</div>
 		</main>
@@ -425,7 +430,11 @@
 	<script src="../js/jquery.main.js"></script>
 
 
-	<!-- Start of HubSpot Embed Code -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="../js/email.js"></script>
+
+
+<!-- Start of HubSpot Embed Code -->
 	<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25847682.js"></script>
 	<!-- End of HubSpot Embed Code -->
 
