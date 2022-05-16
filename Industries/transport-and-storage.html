@@ -18,7 +18,7 @@
         <div class="header-t">
           <div class="container">
             <strong class="logo">
-              <a href="#">
+              <a href="../index.html">
                 <img
                   src="../images/logo.svg"
                   alt="RRSTEK | Home Automation System"
@@ -107,9 +107,9 @@
             <div class="container">
               <div class="box">
                 <ul class="breadcrumbs viewport-holder slideDown">
-                  <li><a href="#">Main</a></li>
-                  <li><a href="#">Sollutions</a></li>
-                  <li><a href="#">Transport and storage</a></li>
+                  <li><a href="../index.html">Main</a></li>
+                  <li><a href="../Solutions/index.html">Solutions</a></li>
+                  <li><a href="transport-and-storage.html">Transport and storage</a></li>
                 </ul>
                 <div id="text-banner-overview" class="text">
                   <h1 class="viewport-holder slideDown delay-1">
@@ -124,7 +124,7 @@
                     carefully managed.
                   </p>
                   <ul class="viewport-holder slideDown delay-3">
-                    <li><a href="#" class="btn sec w-spe-btn-m">Get Solutions</a></li>
+                    <li><a href="../Solutions/index.html" class="btn sec w-spe-btn-m">Get Solutions</a></li>
                   </ul>
                 </div>
               </div>
@@ -245,7 +245,7 @@
                         alt="image description"
                       />
                       <div class="txt-box">
-                        <a href="#" class="more">Neuro Detector</a>
+                        <a href="../security/neuro-detector.html" class="more">Neuro Detector</a>
                       </div>
                     </div>
                   </div>
@@ -408,11 +408,11 @@
                     Book a Demo for your facility for demotrastion of camera
                     operation.
                   </p>
-                  <form action="#" class="user-form">
-                    <input type="text" placeholder="Your Name" />
-                    <input type="email" placeholder="Your Email" />
-                    <input type="submit" value="Book Now" />
-                  </form>
+                  <form  onsubmit="demoEmail(); reset(); return false" method="POST" class="user-form">
+									<input class="form-control" id="name" type="text" placeholder="Your Name" name="name" required>
+									<input class="form-control" id="email" type="email" placeholder="Your Email" name="emai" required>
+									<input type="submit" value="Book Now">
+								</form>
                 </div>
               </div>
             </div>

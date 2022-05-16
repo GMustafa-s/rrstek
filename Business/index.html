@@ -440,11 +440,11 @@
                     Book a Demo for your facility for demotrastion of camera
                     operation.
                   </p>
-                  <form action="#" class="user-form">
-                    <input type="text" placeholder="Your Name" />
-                    <input type="email" placeholder="Your Email" />
-                    <input type="submit" value="Book Now" />
-                  </form>
+                  <form  onsubmit="demoEmail(); reset(); return false" method="POST" class="user-form">
+									<input class="form-control" id="name" type="text" placeholder="Your Name" name="name" required>
+									<input class="form-control" id="email" type="email" placeholder="Your Email" name="emai" required>
+									<input type="submit" value="Book Now">
+								</form>
                 </div>
               </div>
             </div>

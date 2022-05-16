@@ -16,7 +16,7 @@
       <div class="header-t">
         <div class="container">
           <strong class="logo">
-            <a href="#">
+            <a href="../index.html">
               <img
                 src="../images/logo.svg"
                 alt="RRSTEK | Home Automation System"
@@ -105,9 +105,9 @@
           <div class="container">
             <div class="box">
               <ul class="breadcrumbs viewport-holder slideDown">
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Sollutions</a></li>
-                <li><a href="#">Retail</a></li>
+                <li><a href="../index.html">Main</a></li>
+                <li><a href="../Solutions/index.html">Solutions</a></li>
+                <li><a href="retail.html">Retail</a></li>
                
               </ul>
               <div id="text-banner-overview" class="text">
@@ -116,7 +116,7 @@
                   Video analytics and IP camera technology firstly were adopted in the retail aiming to avoid or lower the losses from shoplifting and fraud. It cause retailers’ huge financial losses, they can be up to 1.42% of all income. A great part of these losses are associated with staff: cashiers, salespeople and others.
                 </p>
                 <ul class="viewport-holder slideDown delay-3">
-                  <li><a href="#" class="btn sec">Get Solutions</a></li>
+                  <li><a href="../Solutions/index.html" class="btn sec">Get Solutions</a></li>
                 </ul>
               </div>
             </div>
@@ -198,7 +198,7 @@
 									<div class="frame">
 										<img src="../images/Industries/Retail/Queue_detector.png" alt="image description">
 										<div class="txt-box">
-											<a href="#" class="more">Queue Detector</a>
+											<a href="../Business/queue-detector.html" class="more">Queue Detector</a>
 										</div>
 									</div>
 								</div>
@@ -206,7 +206,7 @@
 									<div class="frame">
 										<img src="../images/Industries/Retail/Heat_map_on_map.png" alt="image description">
 										<div class="txt-box">
-											<a href="#" class="more">Heat Map On Map</a>
+											<a href="../Business/heat-map.html" class="more">Heat Map On Map</a>
 										</div>
 									</div>
 								</div>
@@ -214,7 +214,7 @@
 									<div class="frame">
 										<img src="../images/Industries/Retail/Staff_tracker.png" alt="image description">
 										<div class="txt-box">
-											<a href="#" class="more">Staff Tracker</a>
+											<a href="../Business/staff-tracker.html" class="more">Staff Tracker</a>
 										</div>
 									</div>
 								</div>
@@ -331,10 +331,10 @@
                   Book a Demo for your facility for demotrastion of camera
                   operation.
                 </p>
-                <form action="#" class="user-form">
-                  <input type="text" placeholder="Your Name" />
-                  <input type="email" placeholder="Your Email" />
-                  <input type="submit" value="Book Now" />
+                <form  onsubmit="demoEmail(); reset(); return false" method="POST" class="user-form">
+									<input class="form-control" id="name" type="text" placeholder="Your Name" name="name" required>
+									<input class="form-control" id="email" type="email" placeholder="Your Email" name="emai" required>
+									<input type="submit" value="Book Now">
                 </form>
               </div>
             </div>
