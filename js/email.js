@@ -12,7 +12,7 @@ function sendEmail(){
         + "<br><br> Message:  " + document.getElementById("message").value
         
         }).then(
-        message => alert(message)
+        message => alert("Your message sent successfully")
     );
 }
     
@@ -27,8 +27,7 @@ function sendEmail(){
             Subject : "New Contact Form Enquiry",
             Body : " <h3> Your Name:  " + document.getElementById("name").value
             + "<br><br>  Your Email:  "  + document.getElementById("email").value 
-            
             }).then(
-            message => alert(message)
+            message => alert("Your message sent successfully")
         );
     }
