@@ -13,11 +13,9 @@ function sendEmail(){
         + "<br><br> Message:  " + document.getElementById("message").value
         
         }).then(
-        message => alert(message + "!, Your message sent successfully")
+        message => alert(message + "! Your message sent successfully")
     );
 }
-    
-
     function demoEmail(){
         Email.send({
             SecureToken: "2e489077-907b-4fba-b87e-9905e749bb29",

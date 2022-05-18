@@ -33,7 +33,7 @@
 										<a href="/index.html" class="title">Home</a>
 									</li>
 									<li class="has-dropdown">
-										<a href="/Business/index.html" class="title">BUSINESS</a>
+										<a href="#" class="title">BUSINESS</a>
 										<ul class="link">
 											<li><a href="#" class="nav-back">Back</a></li>
 											<!-- <li><span class="label">Text Label</span></li> -->
@@ -47,7 +47,7 @@
 										</ul>
 									</li>
 									<li class="has-dropdown">
-										<a href="/Solutions/index.html" class="title">SOLUTIONS</a>
+										<a href="#" class="title">SOLUTIONS</a>
 										<ul class="link">
 											<li><a href="#" class="nav-back">Back</a></li>
 											<!-- <li><span class="label">Text Label</span></li> -->
@@ -62,7 +62,7 @@
 								</ul>
 								<ul class="list">
 									<li class="has-dropdown">
-										<a href="/about-rrstek.html" class="title">ABOUT US</a>
+										<a href="#" class="title">ABOUT US</a>
 										<ul class="link">
 											<li><a href="#" class="nav-back">Back</a></li>
 											<!-- <li><span class="label">Text Label</span></li> -->
@@ -87,7 +87,7 @@
 								</ul>
 							</div>
 							<div class="btn-holder">
-								<a href="#" class="btn secondary">Get Demo</a>
+								<a href="../Solutions/demo.html" class="btn secondary">Get Demo</a>
 							</div>
 						</div>
 					</nav>
@@ -251,30 +251,30 @@
 			<div class="contact-form">
 				<div class="container">
 					<h3 class="viewport-holder slideDown"><span>Contact Us</span> Contact Sales for questions or a live video security demo</h3>
-					<form action="#" class="viewport-holder slideDown delay-1">
+					<form onsubmit="sendEmail(); reset(); return false" method="POST">
 						<div class="holder">
-							<div class="cols">
-								<div class="rows viewport-holder slideDown delay-1">
+							<div class="cols viewport-holder slideDown delay-1">
+								<div class="rows">
 									<label for="first-name">First Name <sup>*</sup></label>
-									<input class="form-control" id="first-name" type="text" placeholder="First Name" required>
+									<input class="form-control" id="first-name" type="text" placeholder="First Name" name="first-name" required>
 								</div>
-								<div class="rows viewport-holder slideDown delay-2">
+								<div class="rows">
 									<label for="last-name">Last Name <sup>*</sup></label>
-									<input class="form-control" id="last-name" type="text" placeholder="Last Name" required>
+									<input class="form-control" id="last-name" type="text" placeholder="Last Name" name="last-name" required>
 								</div>
-								<div class="rows viewport-holder slideDown delay-3">
+								<div class="rows">
 									<label for="email">Email <sup>*</sup></label>
-									<input class="form-control" id="email" type="email" placeholder="Email" required>
+									<input class="form-control" id="email" type="email" placeholder="Email" name="email" required>
 								</div>
 							</div>
-							<div class="cols">
-								<div class="rows viewport-holder slideDown delay-1">
+							<div class="cols viewport-holder slideDown delay-2">
+								<div class="rows">
 									<label for="region">Region/Country <sup>*</sup></label>
-									<input class="form-control" id="region" type="text" placeholder="Region/Country" required>
+									<input class="form-control" id="region" type="text" placeholder="Region/Country" name="region" required>
 								</div>
-								<div class="rows viewport-holder slideDown delay-2">
+								<div class="rows">
 									<label for="message">Message</label>
-									<textarea class="form-control" id="message" cols="30" rows="10" placeholder="Let us know about your needs, interest, and other quetions."></textarea>
+									<textarea class="form-control" id="message" cols="30" rows="10" placeholder="Let us know about your needs, interest, and other quetions." name="message" required></textarea>
 								</div>
 							</div>
 						</div>
@@ -282,11 +282,11 @@
 							<input id="emails" type="checkbox" required>
 							<label for="emails">I would like to receive communications from reCAPTCHA about products, services, and other news. You can unsubscribe at any time. For more information, please read our <a href="#">Privacy Policy</a>.</label>
 						</div>
-						<div class="box">
-							<div class="captcha viewport-holder slideDown delay-4">
+						<div class="box viewport-holder slideDown delay-4">
+							<div class="captcha">
 								<img src="../images/captcha.jpg" alt="captcha">
 							</div>
-							<input type="submit" value="Send" class="viewport-holder slideDown delay-5">
+							<input type="submit" value="Send">
 						</div>
 					</form>
 				</div>
@@ -350,45 +350,37 @@
 			</div>
 			<div class="footer-b">
 			  <div class="col">
-				<ul>
-				  <li>
-					<a href="#"
-					  ><img
-						src="../images/ico-instagram.svg"
-						width="18"
-						height="18"
+					<ul>
+					  <li>
+						<a href="#"
+						><img
+						src="../images/social-icons/Button/Social Icons.png"
 						alt="image description"
-					/></a>
-				  </li>
-				  <li>
-					<a href="#"
-					  ><img
-						src="../images/ico-xbox.svg"
-						width="18"
-						height="18"
+					  /></a>
+					  </li>
+					  <li>
+						<a href="#"
+						><img
+						src="../images/social-icons/Button/Social Icons-1.png"
 						alt="image description"
-					/></a>
-				  </li>
-				  <li>
-					<a href="#"
-					  ><img
-						src="../images/ico-twitter.svg"
-						width="16"
-						height="13"
+					  /></a>
+					  </li>
+					  <li>
+						<a href="#"
+						><img
+						src="../images/social-icons/Button/Social Icons-2.png"
 						alt="image description"
-					/></a>
-				  </li>
-				  <li>
-					<a href="#"
-					  ><img
-						src="../images/ico-youtube.svg"
-						width="18"
-						height="13"
+					  /></a>
+					  </li>
+					  <li>
+					  <a href="#"
+						><img
+						src="../images/social-icons/Button/Social Icons-3.png"
 						alt="image description"
-					/></a>
-				  </li>
-				</ul>
-			  </div>
+					  /></a>
+					  </li>
+					</ul>
+				</div>
 			  <div class="col">
 				<p><a href="#">Privacy policy</a></p>
 			  </div>
