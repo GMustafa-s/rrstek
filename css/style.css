@@ -311,7 +311,7 @@ nav{
 	overflow: hidden;
 }
 .header-b h1{
-	margin: 0;
+	margin-left: -50px;
 	font-weight: 400;
 	font-size: 48px;
 	line-height: 68px;
