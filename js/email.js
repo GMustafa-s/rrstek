@@ -32,7 +32,7 @@
         
                 if(!tel.val()){
                  tel.css("border","2px solid red");
-                 text.css("background-color","#FFECEC");
+                 tel.css("background-color","#FFECEC");
             
                 }
             
