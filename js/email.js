@@ -1,4 +1,51 @@
 
+		    $(".login-btn").on("click",function(){
+                var text = $("input[type='text']");
+                var email = $("input[type='email']");
+                var texta = $("textarea[type='text']");
+                var pass = $("input[type='password']");
+                var tel = $("input[type='tel']");
+                var name = $("input[type='name']");
+            
+                if(!text.val()){
+                 text.css("border","2px solid red");
+                 text.css("background-color","#FFECEC");
+            
+                }
+                if(!name.val()){
+                 name.css("border","2px solid red");
+                 name.css("background-color","#FFECEC");
+            
+                }
+
+                if(!email.val()){
+                 email.css("border","2px solid red");
+                 email.css("background-color","#FFECEC");
+            
+                }
+
+                if(!texta.val()){
+                 texta.css("border","2px solid red");
+                 texta.css("background-color","#FFECEC");
+            
+                }
+        
+                if(!tel.val()){
+                 tel.css("border","2px solid red");
+                 text.css("background-color","#FFECEC");
+            
+                }
+            
+                if(!pass.val()){
+                    pass.css("border","2px solid red");
+                    pass.css("background-color","#FFECEC");
+            
+                }
+            });
+        
+
+
+
 function sendEmail(){
     Email.send({
         SecureToken: "2e489077-907b-4fba-b87e-9905e749bb29",
@@ -15,6 +62,8 @@ function sendEmail(){
         }).then(
         message => alert(message + "! Your message sent successfully")
     );
+
+
 }
     function demoEmail(){
         Email.send({
