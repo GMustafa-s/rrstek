@@ -4043,9 +4043,6 @@ font-size: 14px;
 		width: 100%;
 		height: auto;
 	}
-	.article-holder{
-		padding-top: 100px;
-	}
 
 	.article-holder .article:nth-child(odd) .img-box{
 		margin-left: 0;
@@ -5355,14 +5352,25 @@ font-size: 14px;
 
 	}
 @media only screen and (max-width: 480px){
+	#promo-demo{
+		background: url(../images/bg-main-mobile.png) no-repeat;
+		background-size: cover;
+		z-index: 1;
+		height: 40vh;
+	}
+	#promo-contact-us {
+		background: url(../images/contact-us-bg-mbl.png) no-repeat;
+		background-size: cover;
+		height: 75vh;
+	}
 	.promo .btn.sec{
 		margin-top: 10px !important;
 	}
 	.bann-head{
 		flex-direction: row !important;
 	}
-	.promo.integ {
-		height: 520px;
+	.promo.integ{
+		height: 300px;
 	}
 	.brand-holder.add .brands-logo li{
 		max-width: 110px;
@@ -5400,5 +5408,8 @@ font-size: 14px;
 	}
 	.promo:before{
 		background: linear-gradient(202deg, #020050, #00EDED);
+	}
+	.article-holder {
+     padding-top: 1px;
 	}
 }
