@@ -31,13 +31,13 @@
 <div class="link-holder col2-tab">
     <div class="container">
         <ul class="links viewport-holder slideDown">
-            <li><a href="{{route('workspace_detector')}}">Workspace Detector</a></li>
-            <li><a href="{{route('staff_tracker')}}">Staff Tracker</a></li>
-            <li><a href="{{route('heat_map')}}">Heat Map on Map</a></li>
-            <li><a href="{{route('queue_counter')}}">Queue Counter</a></li>
-            <li><a href="{{route('active_post')}}">ActivePOS</a></li>
-            <li><a href="{{route('shelf_detector')}}">Shelf Detector</a></li>
-            <li><a href="{{route('neuro_counter')}}">Neuro Counter</a></li>
+            <li><a href="{{route('/workspace_detector')}}">Workspace Detector</a></li>
+            <li><a href="{{route('/staff_tracker')}}">Staff Tracker</a></li>
+            <li><a href="{{route('/heat_map')}}">Heat Map on Map</a></li>
+            <li><a href="{{route('/queue_counter')}}">Queue Counter</a></li>
+            <li><a href="{{route('/active_post')}}">ActivePOS</a></li>
+            <li><a href="{{route('/shelf_detector')}}">Shelf Detector</a></li>
+            <li><a href="{{route('/neuro_counter')}}">Neuro Counter</a></li>
         </ul>
     </div>
 </div>
@@ -184,132 +184,10 @@
             </article>
         </div>
     </div>
-    <div class="our-work">
-        <div class="container">
-            <div class="heading">
-                <div class="text viewport-holder slideDown">
-                    <h2>
-                        <span><i>OUR WORK</i></span> See Our Product in Action
-                    </h2>
-                </div>
-                <div class="btn-holder viewport-holder slideDown delay-1">
-                    <a class="see-all" href="#">See All</a>
-                </div>
-            </div>
-            <div class="slick-slider-add">
-                <div class="slide viewport-holder slideDown delay-1">
-                    <div class="img">
-                        <img src="{{ asset('frontend') }}/images/img-12.jpg" alt="image description" />
-                    </div>
-                    <div class="txt">
-                        <h3>Almaty International Airport</h3>
-                        <h4>
-                            <i class="ico"><img src="{{ asset('frontend') }}/images/ico-location-solid.svg"
-                                    alt="image description" /></i>
-                            Almaty Airport Turkey
-                        </h4>
-                    </div>
-                </div>
-                <div class="slide viewport-holder slideDown delay-2">
-                    <div class="img">
-                        <img src="{{ asset('frontend') }}/images/img-12.jpg" alt="image description" />
-                    </div>
-                    <div class="txt">
-                        <h3>Almaty International Airport</h3>
-                        <h4>
-                            <i class="ico"><img src="{{ asset('frontend') }}/images/ico-location-solid.svg"
-                                    alt="image description" /></i>
-                            Almaty Airport Turkey
-                        </h4>
-                    </div>
-                </div>
-                <div class="slide viewport-holder slideDown delay-3">
-                    <div class="img">
-                        <img src="{{ asset('frontend') }}/images/img-12.jpg" alt="image description" />
-                    </div>
-                    <div class="txt">
-                        <h3>Almaty International Airport</h3>
-                        <h4>
-                            <i class="ico"><img src="{{ asset('frontend') }}/images/ico-location-solid.svg"
-                                    alt="image description" /></i>
-                            Almaty Airport Turkey
-                        </h4>
-                    </div>
-                </div>
-                <div class="slide viewport-holder slideDown delay-1">
-                    <div class="img">
-                        <img src="{{ asset('frontend') }}/images/img-12.jpg"
-                            alt="image description" />
-                    </div>
-                    <div class="txt">
-                        <h3>Almaty International Airport</h3>
-                        <h4>
-                            <i class="ico"><img
-                                    src="{{ asset('frontend') }}/images/ico-location-solid.svg"
-                                    alt="image description" /></i>
-                            Almaty Airport Turkey
-                        </h4>
-                    </div>
-                </div>
-                <div class="slide viewport-holder slideDown delay-2">
-                    <div class="img">
-                        <img src="{{ asset('frontend') }}/images/img-12.jpg"
-                            alt="image description" />
-                    </div>
-                    <div class="txt">
-                        <h3>Almaty International Airport</h3>
-                        <h4>
-                            <i class="ico"><img src="{{ asset('frontend') }}/images/ico-location-solid.svg"
-                                    alt="image description" /></i>
-                            Almaty Airport Turkey
-                        </h4>
-                    </div>
-                </div>
-                <div class="slide viewport-holder slideDown delay-3">
-                    <div class="img">
-                        <img src="{{ asset('frontend') }}/images/img-12.jpg" alt="image description" />
-                    </div>
-                    <div class="txt">
-                        <h3>Almaty International Airport</h3>
-                        <h4>
-                            <i class="ico"><img src="{{ asset('frontend') }}/images/ico-location-solid.svg"
-                                    alt="image description" /></i>
-                            Almaty Airport Turkey
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="booking-area">
-        <div class="container">
-            <div class="holder">
-                <div class="text-box viewport-holder slideDown">
-                    <h2><span>GET DEMO</span> Try RRSTEK in Your Business</h2>
-                    <p>
-                        Learn more about how RRSTEK analytic modules work! Demo mode
-                        is an opportunity to see for yourself how the system operates,
-                        and also check the interface and test all the functions
-                    </p>
-                </div>
-                <div class="form-area viewport-holder slideDown delay-1">
-                    <div class="frame">
-                        <h3>Book a Demo</h3>
-                        <p>
-                            Book a Demo for your facility for demotrastion of camera
-                            operation.
-                        </p>
-                        <form onsubmit="demoEmail(); reset(); return false" method="POST" class="user-form">
-                            <input class="form-control" id="name" type="text" placeholder="Your Name" name="name"
-                                required>
-                            <input class="form-control" id="email" type="email" placeholder="Your Email" name="emai"
-                                required>
-                            <input class="login-btn" type="submit" value="Book Now">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('frontend.common.our_work')
+
+
+    @include('frontend.common.demo_booking')
+
 </main>
 @endsection

@@ -63,13 +63,13 @@
                         </ul>
                         <ul class="list">
                             <li class="has-dropdown">
-                                <a href="{{route('aboutus')}}" class="title">ABOUT US</a>
+                                <a href="{{route('/aboutus')}}" class="title">ABOUT US</a>
                                 <ul class="link">
                                     <li><a href="#" class="nav-back">Back</a></li>
                                     <!-- <li><span class="label">Text Label</span></li> -->
-                                    <li><a href="{{route('aboutus')}}">About RRSTEK</a></li>
+                                    <li><a href="{{route('/aboutus')}}">About RRSTEK</a></li>
                                     <!-- <li><span class="label">Text Label</span></li> -->
-                                    <li><a href="{{route('contactus')}}">Contact Us</a></li>
+                                    <li><a href="{{route('/contactus')}}">Contact Us</a></li>
                                 </ul>
                             </li>
 
