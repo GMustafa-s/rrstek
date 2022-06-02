@@ -22,32 +22,32 @@
             <li>
               <strong class="open">BUSINESS</strong>
               <ul class="drop">
-                <li><a href="/Business/index.html">Business</a></li>
-                <li><a href="/health-care/index.html">Healthcare</a></li>
-                <li><a href="/security/index.html">Security</a></li>
-                <li><a href="/work-safety/index.html">Work safety</a></li>
+                <li><a href="{{route('/business')}}">Business</a></li>
+                <li><a href="{{route('/health_care')}}">Healthcare</a></li>
+                <li><a href="{{route('/security')}}">Security</a></li>
+                <li><a href="{{route('/work_safety')}}">Work safety</a></li>
               </ul>
             </li>
             <li>
               <strong class="open">SOLUTIONS</strong>
               <ul class="drop">
-                <li><a href="/Solutions/index.html">Solutions</a></li>
-                <li><a href="/cases/index.html">Cases</a></li>
-                <li><a href="/Solutions/demo.html">Demo</a></li>
+                <li><a href="{{route('/solutions')}}">Solutions</a></li>
+                <li><a href="{{route('/cases')}}">Cases</a></li>
+                <li><a href="{{route('/demo')}}">Demo</a></li>
               </ul>
             </li>
             <li>
               <strong class="open">SUPPORT</strong>
               <ul class="drop">
-                <li><a href="/integrations/">Integrations</a></li>
-                <li><a href="/camera/Compare/">Compare Camera</a></li>
+                <li><a href="{{route('/integrations')}}">Integrations</a></li>
+                <li><a href="{{route('/camera/compare')}}">Compare Camera</a></li>
               </ul>
             </li>
             <li>
               <strong class="open">ABOUT US</strong>
               <ul class="drop">
-                <li><a href="/about-rrstek.html">About rrstek</a></li>
-                <li><a href="/contact-us.html">Contact Us</a></li>
+                <li><a href="{{route('/aboutus')}}">About rrstek</a></li>
+                <li><a href="{{route('/contactus')}}">Contact Us</a></li>
               </ul>
             </li>
           </ul>
@@ -57,28 +57,28 @@
           <div class="col">
               <ul>
                 <li>
-                  <a href="#"
+                  <a href="http://www.instagram.com"
                   ><img
                   src="{{asset('frontend')}}/images/social-icons/Button/Social Icons.png"
                   alt="image description"
                 /></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="http://www.facebook.com"
                   ><img
                   src="{{asset('frontend')}}/images/social-icons/Button/Social Icons-1.png"
                   alt="image description"
                 /></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="http://www.twitter.com"
                   ><img
                   src="{{asset('frontend')}}/images/social-icons/Button/Social Icons-2.png"
                   alt="image description"
                 /></a>
                 </li>
                 <li>
-                <a href="#"
+                <a href="http://www.youtube.com"
                   ><img
                   src="{{asset('frontend')}}/images/social-icons/Button/Social Icons-3.png"
                   alt="image description"
@@ -94,7 +94,7 @@
         </div>
         <div class="col">
           <p>
-            Copyright &copy; 2022 <a href="#">RRSTEK</a> All rights reserved
+            Copyright &copy; 2022 <a href="{{route('/')}}">RRSTEK</a> All rights reserved
           </p>
         </div>
       </div>

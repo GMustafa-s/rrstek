@@ -275,7 +275,7 @@
             </div>
             <div class="box viewport-holder slideDown delay-4">
                 <div class="captcha">
-                    <img src="../images/captcha.jpg" alt="captcha">
+                    <img src="{{asset('frontend')}}/images/captcha.jpg" alt="captcha">
                 </div>
                 <input class="login-btn" type="submit" value="Send">
             </div>

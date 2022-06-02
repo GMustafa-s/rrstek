@@ -29,12 +29,12 @@
       <div class="link-holder">
         <div class="container">
           <ul class="links viewport-holder slideDown">
-            <li><a href="/Industries/transport-and-storage.html">Transport and storage</a></li>
-            <li><a href="/Industries/public-safety.html">Public safety</a></li>
-            <li><a href="/Industries/health-care.html">Healthcare</a></li>
-            <li><a href="/Industries/real-estate.html">Real estate</a></li>
-            <li><a href="/Industries/retail.html">Retail</a></li>
-            <li><a href="/Industries/industrial.html">Industrial</a></li>
+            <li><a href="{{route('/transport_and_storage')}}">Transport and storage</a></li>
+            <li><a href="{{route('/public_safety')}}">Public safety</a></li>
+            <li><a href="{{route('/health_care')}}">Healthcare</a></li>
+            <li><a href="{{route('/real_state')}}">Real estate</a></li>
+            <li><a href="{{route('/retail')}}">Retail</a></li>
+            <li><a href="{{route('/industrial')}}">Industrial</a></li>
           </ul>
         </div>
       </div>

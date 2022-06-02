@@ -161,11 +161,50 @@ Route::get('/solutions', function(){
 
 })->name('/solutions');
 
+
+
+
+            //Industries Solution Card
+Route::get('/industries/health_care', function(){
+    return view('frontend.industries.health-care');
+
+})->name('/health_care');
+
+Route::get('/industries/industrial', function(){
+    return view('frontend.industries.industrial');
+
+})->name('/industrial');
+
+Route::get('/industries/public_safety', function(){
+    return view('frontend.industries.public-safety');
+
+})->name('/public_safety');
+
+Route::get('/industries/real_estate', function(){
+    return view('frontend.industries.real-estate');
+
+})->name('/real_estate');
+
+Route::get('/industries/retail', function(){
+    return view('frontend.industries.retail');
+
+})->name('/retail');
+
+Route::get('/industries/transport_and_storage', function(){
+    return view('frontend.industries.transport-and-storage');
+
+})->name('/transport_and_storage');
+
+
+
             //Cases Card
 Route::get('/cases', function(){
     return view('frontend.cases.index');
 
 })->name('/cases');
+
+
+
 
 //Demo Card
 Route::get('/solutions/demo', function(){
@@ -173,16 +212,33 @@ Route::get('/solutions/demo', function(){
 
 })->name('/demo');
 
+
+
             //Integrations Card
 Route::get('/integrations', function(){
     return view('frontend.integrations.index');
 
 })->name('/integrations');
 
-//Camera Campare Card
+
+
+            //Camera Campare Card
 Route::get('/camera/compare', function(){
-    return view('frontend.camera.compare.index');
+    return view('frontend.camera.compare.camera-compare');
 
 })->name('/camera/compare');
+
+
+Route::get('/camera/detail', function(){
+    return view('frontend.camera.compare.camera-detail');
+
+})->name('/camera/detail');
+
+// Route::get('/camera/compare/detail/{id}', function(){
+//     return view('frontend.camera.compare.camera-detail');
+
+// })->name('/camera/compare/detail/{id}');
+
+
 
 

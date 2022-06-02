@@ -270,7 +270,7 @@
             </div>
         </div>
     </div>
-    @include('frontend.demo_booking')
+    @include('frontend.common.demo_booking')
 </main>
 
 @endsection

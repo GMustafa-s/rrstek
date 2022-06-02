@@ -45,8 +45,7 @@
 							<div class="txt">
 								<h3>TR-D2181IR3 v2 2.8</h3>
 								<h4>Outdoor IP camera with IR illumination</h4>
-								<a href="#" class="more">Compare</a>
-							</div>
+								<a href="#" class="more">Compare</a>							</div>
 						</div>
 						<div class="slide viewport-holder slideDown delay-7">
 							<div class="img">
